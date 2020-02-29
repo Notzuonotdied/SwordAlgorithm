@@ -12,3 +12,7 @@
 # 附录
 
  - 牛客网
+
+## 其他解题思路
+
+ - [字符串的回文串总结](https://www.nowcoder.com/questionTerminal/003482c395bd41c68082f6adc545a600?f=discussion)

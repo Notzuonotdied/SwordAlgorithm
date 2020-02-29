@@ -1,10 +1,5 @@
 package Kuaishou;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.TreeSet;
-
 public class Demo1 {
 
     /**
@@ -17,80 +12,62 @@ public class Demo1 {
      * 可用C++,Java,C#实现相关代码逻辑
      */
     public static void main(String[] args) {
-        // 输入：aabcb
-        // 输出：7
-        getPalindromeCount("aabcb");
-        System.out.println(Arrays.toString(res.toArray()));
-        System.out.println(res.size());
+        // 使用动态规划解决
+        System.out.println(Solution1.dp("aabcb"));
     }
-
-    // 最终结果，将paths的结果存入res
-    private static ArrayList<String> res = new ArrayList<>();
-    // 使用TreeSet来去重
-    private static TreeSet<String> paths = new TreeSet<>();
-    // 确认是回文数的则存为true，确认不为回文数的则存为false
-    private static HashMap<String, Boolean> isPalindrome = new HashMap<>();
-    private static boolean[] status;
 
     /**
-     * 获取回文字符串的数量
-     *
-     * @param input 输入的字符串
+     * https://www.nowcoder.com/practice/003482c395bd41c68082f6adc545a600
      */
-    public static void getPalindromeCount(String input) {
-        if (input == null || input.length() == 0) {
-            return;
-        }
-
-        status = new boolean[input.length()];
-        findPalindrome(input, 0, 0);
-        paths.forEach((string) -> res.add(string.split("-")[0]));
-    }
-
-    public static void findPalindrome(String input, int start, int end) {
-        // System.out.println("input:" + input + ", start:" + start + ", end:" + end + ", subString:" + input.substring(start, end));
-        if (isPalindrome(input.substring(start, end))) {
-            paths.add(input.substring(start, end) + "-" + start);
-            return;
-        }
-        for (int i = 0; i < input.length(); ++i) {
-            for (int j = i; j < input.length(); ++j) {
-                if (!status[j]) {
-                    status[j] = true;
-                    findPalindrome(input, i, j + 1);
-                    status[j] = false;
+    private static class Solution1 {
+        /**
+         * 使用动态规划解题，找出方程：
+         * <p>
+         * 假如字符串为「aaaaa」
+         * 第一次查找：axxxa，由于收尾相等，均为a，因此需要判断内部的子串是否为回文串「xxx」，
+         * 第二次查找：axa，由于子串长度为(3-1+1=3)，为3个的时候只需要首尾相同即为回文数，因此有j - i + 1 <= 3
+         * 123
+         * <p>
+         * aabcb
+         * <p>
+         * / a a b c b
+         * a 1 1 0 0 0
+         * a 0 1 0 0 0
+         * b 0 0 1 0 1
+         * c 0 0 0 1 0
+         * b 0 0 0 0 1
+         *
+         * @param s 输入数据
+         */
+        private static int dp(String s) {
+            int n = s.length(), ans = 0;
+            boolean[][] dp = new boolean[n][n];
+            for (int i = n - 1; i >= 0; i--) {
+                for (int j = i; j < n; j++) {
+                    dp[i][j] = (s.charAt(i) == s.charAt(j)) && (j - i <= 2 || dp[i + 1][j - 1]);
+                    if (dp[i][j]) ans++;
                 }
             }
-        }
-    }
 
-    public static boolean isPalindrome(String subInput) {
-        if (subInput == null || subInput.length() == 0) {
-            return false;
-        }
-        if (subInput.length() == 1) {
-            return true;
-        }
-        if (isPalindrome.containsKey(subInput)) {
-            return isPalindrome.get(subInput);
-        }
+//        for (int i = 0; i < n; ++i) {
+//            StringBuilder sb = new StringBuilder();
+//            if (i == 0) {
+//                sb.append(" ").append(" ");
+//                for (int j = 0; j < n; ++j) {
+//                    sb.append(j).append(" ");
+//                }
+//                sb.append("\n");
+//            }
+//            for (int j = 0; j < n; ++j) {
+//                if (j == 0) {
+//                    sb.append(i).append(" ");
+//                }
+//                sb.append(dp[i][j] ? 1 : 0).append(" ");
+//            }
+//            System.out.println(sb.toString());
+//        }
 
-        // System.out.println("subInput:" + subInput);
-        int loop = subInput.length() % 2;
-        int i = 0;
-
-        while (i <= loop) {
-            // System.out.println("对比：" + i + " - " + (subInput.length() - 1 - i));
-            // System.out.println("对比：" + subInput.charAt(i) + " - " + subInput.charAt(subInput.length() - 1 - i));
-            if (subInput.charAt(i) != subInput.charAt(subInput.length() - 1 - i)) {
-                // System.out.println("不是回文数：" + subInput);
-                isPalindrome.put(subInput, false);
-                return false;
-            }
-            ++i;
+            return ans;
         }
-        // System.out.println("确定是回文数：" + subInput);
-        isPalindrome.put(subInput, true);
-        return true;
     }
 }
