@@ -16,6 +16,17 @@ public class QuickSort {
         }
     }
 
+    /**
+     * 归并和快速排序算法--数据结构和算法之美--CH12
+     * https://blog.csdn.net/CSDN_SUSAN/article/details/100555140
+     *
+     * 快排的递推公式为：
+     *      quickSort(start...end) = quickSort(start...pivot-1) + quickSort(pivot+1...end)
+     *  终止条件：
+     *      start >= end
+     *  如何查找游标pivot：
+     *
+     */
     private static int[] quickSort(int[] arr, int start, int end) {
         System.out.println("start:" + start + ", end:" + end + "->" + Arrays.toString(arr));
         // key是第一个参数
