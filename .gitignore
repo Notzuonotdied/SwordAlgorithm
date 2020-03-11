@@ -5,6 +5,7 @@
 venv
 out
 .idea
+node_modules
 
 # built application files
 *.apk
