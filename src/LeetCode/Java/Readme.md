@@ -11,6 +11,7 @@
 | [无重复字符的最长子串](LengthOfLongestSubstring.java) | DP | [给定一个字符串，请你找出其中不含有重复字符的 最长子串 的长度。](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/) |
 | [寻找两个有序数组的中位数](FindMedianSortedArrays.java) | 递归 | [给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。](https://leetcode-cn.com/problems/median-of-two-sorted-arrays) |
 | [最长回文子串](LongestPalindrome.java) | DP | [给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
+| [整数反转](ReverseInteger.java) | | [给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。](https://leetcode-cn.com/problems/reverse-integer/) |
 
 # 附录
 
