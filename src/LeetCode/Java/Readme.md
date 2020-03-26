@@ -12,6 +12,7 @@
 | [寻找两个有序数组的中位数](FindMedianSortedArrays.java) | 递归 | [给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。](https://leetcode-cn.com/problems/median-of-two-sorted-arrays) |
 | [最长回文子串](LongestPalindrome.java) | DP | [给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
 | [整数反转](ReverseInteger.java) | | [给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。](https://leetcode-cn.com/problems/reverse-integer/) |
+| [回文数](PalindromeNumber.java) | | [判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。](https://leetcode-cn.com/problems/palindrome-number/) |
 
 # 附录
 
