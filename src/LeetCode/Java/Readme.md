@@ -13,6 +13,7 @@
 | [最长回文子串](LongestPalindrome.java) | DP | [给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
 | [整数反转](ReverseInteger.java) | | [给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。](https://leetcode-cn.com/problems/reverse-integer/) |
 | [回文数](PalindromeNumber.java) | | [判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。](https://leetcode-cn.com/problems/palindrome-number/) |
+| [生命游戏](GameOfLife.java) | 归纳法 | [生命游戏，简称为生命，是英国数学家约翰·何顿·康威在 1970 年发明的细胞自动机。](https://leetcode-cn.com/problems/game-of-life/) |
 
 # 附录
 
