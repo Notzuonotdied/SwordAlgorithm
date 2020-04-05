@@ -15,6 +15,7 @@
 | [回文数](PalindromeNumber.java) | | [判断一个整数是否是回文数。回文数是指正序（从左向右）和倒序（从右向左）读都是一样的整数。](https://leetcode-cn.com/problems/palindrome-number/) |
 | [生命游戏](GameOfLife.java) | 归纳法 | [生命游戏，简称为生命，是英国数学家约翰·何顿·康威在 1970 年发明的细胞自动机。](https://leetcode-cn.com/problems/game-of-life/) |
 | [接雨水](Trap.java) | 韦恩图法 | [给定 n 个非负整数表示每个宽度为 1 的柱子的高度图，计算按此排列的柱子，下雨之后能接多少雨水。](https://leetcode-cn.com/problems/trapping-rain-water/) |
+| [最长公共前缀](LongestCommonPrefix.java) | | [编写一个函数来查找字符串数组中的最长公共前缀。](https://leetcode-cn.com/problems/longest-common-prefix/) |
 
 # 附录
 
