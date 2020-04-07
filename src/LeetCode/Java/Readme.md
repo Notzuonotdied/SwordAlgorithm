@@ -18,6 +18,8 @@
 | [最长公共前缀](LongestCommonPrefix.java) | | [编写一个函数来查找字符串数组中的最长公共前缀。](https://leetcode-cn.com/problems/longest-common-prefix/) |
 | [有效的括号](ValidParenthesis.java) | 辅助栈 | [给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。](https://leetcode-cn.com/problems/valid-parentheses/) | 
 | [合并两个有序链表](MergeTwoLists.java) | | [将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |
+| [删除排序数组中的重复项](RemoveDuplicates.java) | | [给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，你必须在原地修改输入数组并在使用O(1)额外空间的条件下完成。](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
+
 # 附录
 
  - [https://leetcode-cn.com](https://leetcode-cn.com)
