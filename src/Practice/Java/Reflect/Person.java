@@ -8,6 +8,8 @@ public class Person {
     private Integer height;
     private Integer age;
 
+    public static String staticField = "Hello World";
+
 
     public Person() {
         System.out.println("调用Person的无参构造方法");

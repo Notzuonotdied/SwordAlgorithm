@@ -1,9 +1,6 @@
 package Practice.Java.Reflect;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Constructor;
+import java.lang.reflect.*;
 
 public class TestReflect {
     public static void main(String[] args) {
@@ -13,6 +10,10 @@ public class TestReflect {
         getMethods();
         // 获取变量
         getFields();
+        // 获取指定的静态变量
+        getTargetStaticFieldValueBy("staticField");
+        // 获取指定的非静态变量
+        getTargetFieldValueBy("country");
         // 操作数组
         opArray();
     }
@@ -59,6 +60,50 @@ public class TestReflect {
             print("所有定义的成员变量", declaredFields);
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+        }
+    }
+
+    /**
+     * 反射获取静态变量的值
+     *
+     * @param fieldName 变量名称
+     */
+    private static void getTargetStaticFieldValueBy(String fieldName) {
+        try {
+            Class<?> aClass = Class.forName("Practice.Java.Reflect.Person");
+            System.out.println("获取静态变量：");
+            for (Field field : aClass.getFields()) {
+                if (Modifier.isStatic(field.getModifiers()) && field.getName().equals(fieldName)) {
+                    try {
+                        System.out.println("变量名：" + field.getName() + " 值：" + field.get(aClass).toString());
+                    } catch (IllegalAccessException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * 反射获取变量的值
+     *
+     * @param fieldName 变量名称
+     */
+    private static void getTargetFieldValueBy(String fieldName) {
+        Person person = new Person("中国", 200);
+        Class<?> aClass = person.getClass();
+
+        System.out.println("获取指定的非静态变量：");
+        for (Field field : aClass.getFields()) {
+            if (!Modifier.isStatic(field.getModifiers()) && field.getName().equals(fieldName)) {
+                try {
+                    System.out.println("变量名：" + field.getName() + " 值：" + field.get(person).toString());
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                }
+            }
         }
     }
 
