@@ -21,6 +21,7 @@
 | [删除排序数组中的重复项](RemoveDuplicates.java) | | [给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，你必须在原地修改输入数组并在使用O(1)额外空间的条件下完成。](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
 | [移除元素](RemoveElement.java) | | [给你一个数组 nums 和一个值 val，你需要 原地 移除所有数值等于 val 的元素，并返回移除后数组的新长度。](https://leetcode-cn.com/problems/remove-element/) |
 | [搜索插入位置](SearchInsert.java) | 二分查找 | [给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。](https://leetcode-cn.com/problems/search-insert-position/) | 
+| [加一](PlusOne.java) | | [给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。](https://leetcode-cn.com/problems/plus-one/) |
 
 # 附录
 
