@@ -23,6 +23,7 @@
 | [搜索插入位置](SearchInsert.java) | 二分查找 | [给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。](https://leetcode-cn.com/problems/search-insert-position/) | 
 | [加一](PlusOne.java) | | [给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。](https://leetcode-cn.com/problems/plus-one/) |
 | [合并两个有序数组](MergeOrderlyArray.java) | | [给你两个有序整数数组nums1和nums2，请你将nums2合并到nums1中，使num1成为一个有序数组。](https://leetcode-cn.com/problems/merge-sorted-array/) |
+| [买卖股票的最佳时机](MaxProfit.java) | DP入门题 | [给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) |
 
 # 附录
 
