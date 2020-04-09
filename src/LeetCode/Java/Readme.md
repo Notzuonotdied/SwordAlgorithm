@@ -25,6 +25,7 @@
 | [合并两个有序数组](MergeOrderlyArray.java) | | [给你两个有序整数数组nums1和nums2，请你将nums2合并到nums1中，使num1成为一个有序数组。](https://leetcode-cn.com/problems/merge-sorted-array/) |
 | [买卖股票的最佳时机](MaxProfit.java) | DP入门题 | [给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) |
 | [反转字符串](ReverseString.java) | | [编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 char[] 的形式给出。](https://leetcode-cn.com/problems/reverse-string/) |
+| [全排列](Permute.java) | 回溯算法-简单 | [给定一个 没有重复 数字的序列，返回其所有可能的全排列。](https://leetcode-cn.com/problems/permutations/) |
 
 # 附录
 
