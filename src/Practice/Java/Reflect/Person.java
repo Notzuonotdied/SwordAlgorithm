@@ -10,7 +10,7 @@ public class Person {
 
     public static String staticField = "Hello World";
 
-
+    @ReflectMethod(name = "Person")
     public Person() {
         System.out.println("调用Person的无参构造方法");
     }

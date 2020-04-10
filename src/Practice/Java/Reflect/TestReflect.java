@@ -16,6 +16,8 @@ public class TestReflect {
         getTargetFieldValueBy("country");
         // 操作数组
         opArray();
+        // 获取注解的名称
+        getAnnotationVariable();
     }
 
     /**
@@ -125,6 +127,26 @@ public class TestReflect {
                 String className = object.getClass().getName();
                 System.out.println("数组元素: " + object + ", className=" + className);
             }
+        }
+    }
+
+    /**
+     * 获取注解上的变量
+     */
+    private static void getAnnotationVariable() {
+        Class<?> clazz = Person.class;
+        Constructor<?>[] constructors = clazz.getConstructors();
+        Constructor<?> constructor = null;
+        for (Constructor<?> temp : constructors) {
+            if (temp.getParameterTypes().length == 0) {
+                constructor = temp;
+            }
+        }
+        if (constructor == null) {
+            return;
+        }
+        if (constructor.isAnnotationPresent(ReflectMethod.class)) {
+            System.out.println(constructor.getAnnotation(ReflectMethod.class).name());
         }
     }
 
