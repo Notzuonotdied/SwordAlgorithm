@@ -18,6 +18,9 @@ public class Demo29 {
          * 利用了快排的分区的思想，找到了前K个最小的数字。
          * <p>
          * https://github.com/A11Might/CodingInterview/blob/master/code/offer40.java
+         *
+         * @see BaseAlgorithm.Java.QuickSort 快排算法实现。
+         * @see LeetCode.Java.FindKthLargest 寻找数组中最大的第 K 个元素。
          */
         public static ArrayList<Integer> GetLeastNumbers_Solution(int[] input, int k) {
             if (input == null || input.length == 0 || k == 0 || k > input.length) {
