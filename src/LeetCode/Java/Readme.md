@@ -32,6 +32,7 @@
 | [除自身以外数组的乘积](ProductExceptSelf.java) |   | [给你一个长度为 n 的整数数组 nums，其中 n > 1，返回输出数组 output ，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。](https://leetcode-cn.com/problems/product-of-array-except-self/) |
 | [只出现一次的数字](SingleNumber.java) | 异或 | [给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。](https://leetcode-cn.com/problems/single-number/) |
 | [存在重复元素](ContainsDuplicate.java) |   | [给定一个整数数组，判断是否存在重复元素。](https://leetcode-cn.com/problems/contains-duplicate/) |
+| [数组中的第K个最大元素](FindKthLargest.java) |  快排  | [在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
 
 # 附录
 
