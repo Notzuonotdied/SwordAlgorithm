@@ -34,6 +34,7 @@
 | [存在重复元素](ContainsDuplicate.java) |   | [给定一个整数数组，判断是否存在重复元素。](https://leetcode-cn.com/problems/contains-duplicate/) |
 | [数组中的第K个最大元素](FindKthLargest.java) |  快排  | [在未排序的数组中找到第 k 个最大的元素。请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。](https://leetcode-cn.com/problems/kth-largest-element-in-an-array/) |
 | [多数元素](MajorityElement.java) | Boyer-Moore投票算法 | [给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。](https://leetcode-cn.com/problems/majority-element/) |
+| [相交链表](GetIntersectionNode.java) |  快慢指针 | [编写一个程序，找到两个单链表相交的起始节点。](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) |
 
 # 附录
 
