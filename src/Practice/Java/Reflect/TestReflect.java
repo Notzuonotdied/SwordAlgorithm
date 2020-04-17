@@ -1,6 +1,7 @@
 package Practice.Java.Reflect;
 
 import java.lang.reflect.*;
+import java.util.Arrays;
 
 public class TestReflect {
     public static void main(String[] args) {
@@ -18,6 +19,8 @@ public class TestReflect {
         opArray();
         // 获取注解的名称
         getAnnotationVariable();
+        // 获取父类
+        getSuperClass();
     }
 
     /**
@@ -147,6 +150,17 @@ public class TestReflect {
         }
         if (constructor.isAnnotationPresent(ReflectMethod.class)) {
             System.out.println(constructor.getAnnotation(ReflectMethod.class).name());
+        }
+    }
+
+    /**
+     * 查找父类
+     */
+    private static void getSuperClass() {
+        Class<?> clazz = String.class;
+        while (clazz != null) {
+            System.out.println(clazz.getName());
+            clazz = clazz.getSuperclass();
         }
     }
 
