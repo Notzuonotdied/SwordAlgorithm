@@ -40,6 +40,7 @@
 | [最接近的三数之和](ThreeSumClosest.java) |   | [给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。](https://leetcode-cn.com/problems/3sum-closest/) |
 | [合并K个排序链表](MergeKLists.java) |  归并排序变形 | [合并 k 个排序链表，返回合并后的排序链表。请分析和描述算法的复杂度。](https://leetcode-cn.com/problems/merge-k-sorted-lists/) |
 | [搜索旋转排序数组](Search.java) |  二分查找 | [搜索一个给定的目标值，如果数组中存在这个目标值，则返回它的索引，否则返回 -1 。你可以假设数组中不存在重复的元素。你的算法时间复杂度必须是 O(log n) 级别。](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/) |
+| [字符串相乘](Multiply.java) |  乘法-竖式运算 | [给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。](https://leetcode-cn.com/problems/multiply-strings/) |
 
 # 附录
 
