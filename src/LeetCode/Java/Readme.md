@@ -43,6 +43,7 @@
 | [字符串相乘](Multiply.java) |  乘法-竖式运算 | [给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。](https://leetcode-cn.com/problems/multiply-strings/) |
 | [环形链表](HasCycle.java) |  快慢指针 | [给定一个链表，判断链表中是否有环。](https://leetcode-cn.com/problems/linked-list-cycle/) |
 | [环形链表 II](DetectCycle.java) |  快慢指针 | [给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。](https://leetcode-cn.com/problems/linked-list-cycle-ii/) |
+| [最大子序和](MaxSubArray.java) |  贪心 | [给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。](https://leetcode-cn.com/problems/maximum-subarray/) |
 
 # 附录
 
