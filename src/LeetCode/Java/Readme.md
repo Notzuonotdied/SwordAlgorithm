@@ -48,6 +48,7 @@
 | [螺旋矩阵](SpiralOrder.java) |   | [请按照顺时针螺旋顺序，返回矩阵中的所有元素。](https://leetcode-cn.com/problems/spiral-matrix/) |
 | [螺旋矩阵 II](GenerateMatrix.java) |   | [给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。](https://leetcode-cn.com/problems/spiral-matrix-ii/) |
 | [旋转链表](RotateRight.java) |   | [给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。](https://leetcode-cn.com/problems/rotate-list/) |
+| [二叉树的最大深度](MaxDepth.java) |  DFS   | [给定一个二叉树，找出其最大深度。](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) |
 
 # 附录
 
