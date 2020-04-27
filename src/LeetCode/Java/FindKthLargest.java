@@ -12,7 +12,7 @@ public class FindKthLargest {
          * https://leetcode-cn.com/problems/kth-largest-element-in-an-array/
          *
          * @see BaseAlgorithm.Java.QuickSort 利用了快排的思路
-         * @see JavaOffer.Demo29             利用快排找最小的第 K 个元素
+         * @see SwordOffer.JavaOffer.Demo29             利用快排找最小的第 K 个元素
          */
         public static int findKthLargest(int[] nums, int k) {
             int index = 0;
