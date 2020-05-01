@@ -54,6 +54,7 @@
 | [子集](subsets.java) |  位掩码 | [给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets/) |
 | [Nim 游戏](CanWinNim.java) |  规律题（DP会超时系列） | [编写一个函数，来判断你是否可以在给定石头数量的情况下赢得游戏。](https://leetcode-cn.com/problems/nim-game/) |
 | [二叉搜索树的最近公共祖先](LowestCommonAncestor.java) |  利用二叉搜索树的特性 | [给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
+| [二叉树的最近公共祖先](LowestCommonAncestor1.java) |  递归 | [给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) |
 
 # 附录
 
