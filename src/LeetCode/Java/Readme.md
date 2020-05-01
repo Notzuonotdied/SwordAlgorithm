@@ -55,6 +55,7 @@
 | [Nim 游戏](CanWinNim.java) |  规律题（DP会超时系列） | [编写一个函数，来判断你是否可以在给定石头数量的情况下赢得游戏。](https://leetcode-cn.com/problems/nim-game/) |
 | [二叉搜索树的最近公共祖先](LowestCommonAncestor.java) |  利用二叉搜索树的特性 | [给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
 | [二叉树的最近公共祖先](LowestCommonAncestor1.java) |  递归 | [给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) |
+| [二叉搜索树中第K小的元素](KthSmallest.java) |  辅助栈 | [给定一个二叉搜索树，编写一个函数 kthSmallest 来查找其中第 k 个最小的元素。](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/) |
 
 # 附录
 
