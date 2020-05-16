@@ -49,9 +49,9 @@
 | [螺旋矩阵 II](GenerateMatrix.java) |   | [给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。](https://leetcode-cn.com/problems/spiral-matrix-ii/) |
 | [旋转链表](RotateRight.java) |   | [给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。](https://leetcode-cn.com/problems/rotate-list/) |
 | [二叉树的最大深度](MaxDepth.java) |  DFS   | [给定一个二叉树，找出其最大深度。](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) |
-| [2的幂](isPowerOfTwo.java) | 数学归纳法 | [给定一个整数，编写一个函数来判断它是否是 2 的幂次方。](https://leetcode-cn.com/problems/power-of-two/) |
+| [2的幂](IsPowerOfTwo.java) | 数学归纳法 | [给定一个整数，编写一个函数来判断它是否是 2 的幂次方。](https://leetcode-cn.com/problems/power-of-two/) |
 | [不同路径](UniquePaths.java) | 动态规划-简单 | [一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？](https://leetcode-cn.com/problems/unique-paths/) |
-| [子集](subsets.java) |  位掩码 | [给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets/) |
+| [子集](Subsets.java) |  位掩码 | [给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets/) |
 | [Nim 游戏](CanWinNim.java) |  规律题（DP会超时系列） | [编写一个函数，来判断你是否可以在给定石头数量的情况下赢得游戏。](https://leetcode-cn.com/problems/nim-game/) |
 | [二叉搜索树的最近公共祖先](LowestCommonAncestor.java) |  利用二叉搜索树的特性 | [给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
 | [二叉树的最近公共祖先](LowestCommonAncestor1.java) |  递归 | [给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) |
