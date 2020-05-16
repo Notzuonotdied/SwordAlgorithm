@@ -24,7 +24,7 @@
 | [打家劫舍](Rob.java) | 最大值 | [你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。](https://leetcode-cn.com/problems/house-robber/) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) |  最小值 | [您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) |
 | [连续子数组的最大和](MaxSubArray.java) | Sum | [输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) |
-| [按摩师](Massage.java) |   | [一个有名的按摩师会收到源源不断的预约请求，每个预约都可以选择接或不接。在每次预约服务之间要有休息时间，因此她不能接受相邻的预约。给定一个预约请求序列，替按摩师找到最优的预约集合（总预约时间最长），返回总的分钟数。](https://leetcode-cn.com/problems/the-masseuse-lcci/) |
+| [按摩师](Massage.java) | 最大值 | [一个有名的按摩师会收到源源不断的预约请求，每个预约都可以选择接或不接。在每次预约服务之间要有休息时间，因此她不能接受相邻的预约。给定一个预约请求序列，替按摩师找到最优的预约集合（总预约时间最长），返回总的分钟数。](https://leetcode-cn.com/problems/the-masseuse-lcci/) |
 
 # 附录
 
