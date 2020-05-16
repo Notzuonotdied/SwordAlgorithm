@@ -2,7 +2,7 @@ package LeetCode.Java.dp;
 
 public class Rob {
     public static void main(String[] args) {
-
+        System.out.println(Solution1.rob(new int[]{2, 7, 9, 3, 1}));
     }
 
     private static class Solution1 {
@@ -18,8 +18,10 @@ public class Rob {
          * <p>
          * 执行用时 :0 ms, 在所有 Java 提交中击败了100.00% 的用户
          * 内存消耗 :37 MB, 在所有 Java 提交中击败了6.52%的用户
+         *
+         * @see Massage 同款打家劫舍问题。
          */
-        public int rob(int[] nums) {
+        public static int rob(int[] nums) {
             int[] dp = new int[3];
             for (int i = 0; i < nums.length; i++) {
                 dp[(i + 2) % 3] = Math.max(dp[i % 3] + nums[i], dp[(i + 1) % 3]);
