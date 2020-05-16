@@ -13,6 +13,7 @@
 | [三步问题](WaysToStep.java) | dp(n) = dp(n-1) + dp(n-2) |
 | [打家劫舍](Rob.java) | dp(n) = Max(dp(n-1), dp(n-2)+array(n-1)) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) | dp(2)=Min(dp(0)+cost(i-2), dp(1)+cost(i-1)) |
+| [连续子数组的最大和](MaxSubArray.java) | Sum(1...n) |
 
 ## 题集
 
@@ -22,6 +23,7 @@
 | [三步问题](WaysToStep.java) |  DP  | [三步问题。有个小孩正在上楼梯，楼梯有n阶台阶，小孩一次可以上1阶、2阶或3阶。实现一种方法，计算小孩有多少种上楼梯的方式。结果可能很大，你需要对结果模1000000007。](https://leetcode-cn.com/problems/three-steps-problem-lcci/) |
 | [打家劫舍](Rob.java) | 最大值 | [你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。](https://leetcode-cn.com/problems/house-robber/) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) |  最小值 | [您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) |
+| [连续子数组的最大和](MaxSubArray.java) | Sum | [输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) |
 
 # 附录
 
