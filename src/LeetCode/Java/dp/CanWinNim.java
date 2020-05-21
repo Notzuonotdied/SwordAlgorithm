@@ -1,4 +1,4 @@
-package LeetCode.Java;
+package LeetCode.Java.dp;
 
 public class CanWinNim {
     public static void main(String[] args) {
