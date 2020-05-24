@@ -53,6 +53,7 @@
 | [二叉搜索树中第K小的元素](KthSmallest.java) |  辅助栈 | [给定一个二叉搜索树，编写一个函数 kthSmallest 来查找其中第 k 个最小的元素。](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst/) |
 | [删除链表的倒数第N个节点](RemoveNthFromEnd.java) |  双指针 | [给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |
 | [解析布尔表达式](ParseBoolExpr.java) | 双辅助栈 | [给你一个以字符串形式表述的 布尔表达式（boolean） expression，返回该式的运算结果。](https://leetcode-cn.com/problems/parsing-a-boolean-expression/) |
+| [逆波兰表达式求值](EvalRPN.java) |  辅助栈 | [根据逆波兰表示法，求表达式的值。](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) |
 
 # 附录
 
