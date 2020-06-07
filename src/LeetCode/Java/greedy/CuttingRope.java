@@ -20,6 +20,11 @@ public class CuttingRope {
          * 问题：
          * 1. 为什么每次都是乘以3，详见题解：https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/solution/mian-shi-ti-14-ii-jian-sheng-zi-iitan-xin-er-fen-f/
          * <p>
+         * <p>
+         * DP解决方案：
+         *
+         * @see LeetCode.Java.dp.CuttingRope
+         * <p>
          * 执行用时 :0 ms, 在所有 Java 提交中击败了100.00% 的用户
          * 内存消耗 :36.1 MB, 在所有 Java 提交中击败了100.00%的用户
          */
