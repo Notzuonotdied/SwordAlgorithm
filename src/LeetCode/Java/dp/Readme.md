@@ -34,6 +34,7 @@
 | [面试题47. 礼物的最大价值](MaxValue.java) | 最大值 | [在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) |
 | [面试题14- II. 剪绳子 II](CuttingRope.java) |  数学归纳+贪心  | [给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 k[0],k[1]...k[m] 。请问 k[0]*k[1]*...*k[m] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/) |
 | ✨[面试题 17.06. 2出现的次数](NumberOf2sInRange.java) | 数位DP+归纳分析 | [编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。](https://leetcode-cn.com/problems/number-of-2s-in-range-lcci/)<br/><br/>推荐阅读下题解，完整的✨**数位DP**✨分析逻辑。 |
+| [面试题43. 1～n整数中1出现的次数](CountDigitOne.java) | 数位DP+归纳分析 | [输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/) |
 
 ### [面试题14- II. 剪绳子 II](CuttingRope.java)推导思路
 
