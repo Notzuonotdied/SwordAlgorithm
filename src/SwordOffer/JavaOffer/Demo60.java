@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import LeetCode.Java.component.TreeNode;
+
 import java.util.ArrayList;
 
 public class Demo60 {
@@ -22,16 +24,6 @@ public class Demo60 {
 
             depth(root.left, depth + 1, list);
             depth(root.right, depth + 1, list);
-        }
-    }
-
-    private static class TreeNode {
-        int val = 0;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
         }
     }
 }

@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import LeetCode.Java.component.TreeNode;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -99,15 +101,5 @@ public class Demo24 {
         }
 
         path.remove(path.size() - 1);
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
-        }
     }
 }

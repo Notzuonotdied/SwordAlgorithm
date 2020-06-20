@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import LeetCode.Java.component.TreeNode;
+
 public class Demo39 {
 
     public static void main(String[] args) {
@@ -55,17 +57,6 @@ public class Demo39 {
             }
             // 计算高度
             return Math.abs(left - right) > 1 ? -1 : 1 + Math.max(left, right);
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
-
         }
     }
 }

@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import LeetCode.Java.component.TreeNode;
+
 public class Demo18 {
 
     public static void main(String[] args) {
@@ -17,16 +19,6 @@ public class Demo18 {
             // 对结点的左右两个子树进行处理
             Mirror(root.left);
             Mirror(root.right);
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
         }
     }
 }

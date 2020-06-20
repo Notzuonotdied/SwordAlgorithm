@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import LeetCode.Java.component.TreeNode;
+
 import java.util.ArrayDeque;
 import java.util.Deque;
 
@@ -35,16 +37,6 @@ public class KthSmallest {
                 }
                 root = root.right;
             }
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

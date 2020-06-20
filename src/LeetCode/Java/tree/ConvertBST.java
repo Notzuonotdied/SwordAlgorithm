@@ -1,5 +1,7 @@
 package LeetCode.Java.tree;
 
+import LeetCode.Java.component.TreeNode;
+
 public class ConvertBST {
     public static void main(String[] args) {
 
@@ -40,16 +42,6 @@ public class ConvertBST {
             root.val = count;
             convertBST(root.left);
             return root;
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

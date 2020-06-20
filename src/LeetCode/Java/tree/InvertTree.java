@@ -1,5 +1,7 @@
 package LeetCode.Java.tree;
 
+import LeetCode.Java.component.TreeNode;
+
 public class InvertTree {
     public static void main(String[] args) {
 
@@ -39,16 +41,6 @@ public class InvertTree {
             root.left = invertTree(root.right);
             root.right = invertTree(temp);
             return root;
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

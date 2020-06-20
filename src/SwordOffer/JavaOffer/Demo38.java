@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import LeetCode.Java.component.TreeNode;
+
 public class Demo38 {
 
     public static void main(String[] args) {
@@ -46,17 +48,5 @@ public class Demo38 {
 
             return (leftDepth > rightDepth) ? leftDepth + 1 : rightDepth + 1;
         }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left = null;
-        TreeNode right = null;
-
-        public TreeNode(int val) {
-            this.val = val;
-
-        }
-
     }
 }

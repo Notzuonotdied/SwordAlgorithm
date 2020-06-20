@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import LeetCode.Java.component.TreeNode;
+
 import java.util.*;
 
 public class LowestCommonAncestor1 {
@@ -79,16 +81,6 @@ public class LowestCommonAncestor1 {
                 return true;
             }
             return x == p || x == q || leftCon || rightCon;
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

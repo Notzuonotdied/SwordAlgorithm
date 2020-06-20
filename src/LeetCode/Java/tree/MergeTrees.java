@@ -1,5 +1,7 @@
 package LeetCode.Java.tree;
 
+import LeetCode.Java.component.TreeNode;
+
 public class MergeTrees {
     public static void main(String[] args) {
 
@@ -32,16 +34,6 @@ public class MergeTrees {
             t1.left = mergeTrees(t1.left, t2.left);
             t1.right = mergeTrees(t1.right, t2.right);
             return t1;
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }

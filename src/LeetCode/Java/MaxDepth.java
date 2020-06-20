@@ -1,6 +1,8 @@
 package LeetCode.Java;
 
 
+import LeetCode.Java.component.TreeNode;
+
 /**
  * 输入一棵二叉树的根节点，求该树的深度。从根节点到叶节点依次经过的节点（含根、叶节点）形成树的一条路径，最长路径的长度为树的深度。
  *
@@ -79,16 +81,6 @@ public class MaxDepth {
                 int right_height = maxDepth(root.right);
                 return java.lang.Math.max(left_height, right_height) + 1;
             }
-        }
-    }
-
-    private static class TreeNode {
-        int val;
-        TreeNode left;
-        TreeNode right;
-
-        TreeNode(int x) {
-            val = x;
         }
     }
 }
