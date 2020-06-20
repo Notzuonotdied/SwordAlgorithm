@@ -1,6 +1,7 @@
 package BaseAlgorithm.Java;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 public class QuickSort {
     public static void main(String[] args) {
@@ -14,8 +15,63 @@ public class QuickSort {
         }
         System.out.println();
 
-        Solution2.Qsort(arr, 0, arr.length - 1);
+        // Solution2.Qsort(arr, 0, arr.length - 1);
+        Solution3.Qsort(arr, 0, arr.length - 1);
         System.out.println(Arrays.toString(arr));
+    }
+
+    private static class Solution3 {
+        /**
+         * 快排的非递归写法
+         * <p>
+         * 快速排序(三种算法实现和非递归实现)
+         * https://blog.csdn.net/qq_36528114/article/details/78667034
+         */
+        public static void Qsort(int[] input, int start, int end) {
+            Stack<Integer> stack = new Stack<>();
+            stack.push(end);
+            stack.push(start);
+
+            int left, right, pivot;
+            while (!stack.isEmpty()) {
+                left = stack.pop();
+                right = stack.pop();
+
+                pivot = partition(input, left, right);
+
+                if ((pivot - 1) > left) {
+                    stack.push(pivot - 1);
+                    stack.push(start);
+                }
+                if ((pivot + 1) < right) {
+                    stack.push(pivot + 1);
+                    stack.push(end);
+                }
+            }
+        }
+
+        private static int partition(int[] array, int start, int end) {
+            int pivot = array[start];
+
+            while (start < end) {
+                while (start < end && array[end] > pivot) {
+                    end--;
+                }
+                swap(array, start, end);
+                while (start < end && array[start] < pivot) {
+                    start++;
+                }
+                swap(array, start, end);
+            }
+
+            return start;
+        }
+
+        private static void swap(int[] array, int start, int end) {
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+        }
     }
 
     private static class Solution2 {
@@ -43,7 +99,7 @@ public class QuickSort {
             }
         }
 
-        public static int partition(int[] input, int start, int end) {
+        private static int partition(int[] input, int start, int end) {
             int pivot = input[start];
 
             while (start < end) {
