@@ -125,4 +125,12 @@ int MyAtoi<int>(const std::string &str)
     return result;
 }
 
+#include <iostream>
+
+static void TestMyAtoi()
+{
+    std::cout << MyAtoi<int>("-123124") << std::endl;
+    std::cout << MyAtoi<int>("541564") << std::endl;
+}
+
 #endif // MY_ATOI_H
