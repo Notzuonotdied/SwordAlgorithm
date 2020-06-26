@@ -3,11 +3,63 @@
 
 #include <string>
 
+template<typename _ResultType>
+_ResultType MyAtoi(const std::string &str)
+{
+    _ResultType result = 0;
+    bool conver_start = false; // 标记是否已开始转换
+    bool is_negative = false;
+
+    for(const char ch : str)
+    {
+        if(ch == ' ')
+        {
+            if(conver_start)
+            {
+                break;
+            }
+        }
+        else if((ch > '9' || ch < '0') && ch != '-' && ch != '+')
+        {
+            if(conver_start)
+            {
+                break;
+            }
+            else 
+            {
+                return 0;
+            }
+        }
+        else 
+        {
+            if(ch == '-' || ch == '+')
+            {
+                if(conver_start)
+                {
+                    break;
+                }
+                is_negative = ch == '-';
+            }
+            else 
+            {
+                result = result * 10 - '0' + ch;
+            }
+            conver_start = true;
+        }
+    }
+    if(is_negative)
+    {
+        result = -result;
+    }
+    return result;
+}
+
 /* 字符串转int数字
  * @str  输入的字符串
  * @return  如果小于最小值，则返回最小值；如果大于最大值，则返回最大值；如果非法，则返回0
  */
-static int MyAtoi(const std::string &str)
+template<>
+int MyAtoi<int>(const std::string &str)
 {
     long long result = 0;
     bool conver_start = false; // 标记是否已开始转换
