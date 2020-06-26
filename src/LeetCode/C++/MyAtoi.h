@@ -1,6 +1,8 @@
 #ifndef MY_ATOI_H
 #define MY_ATOI_H
 
+#include <string>
+
 /* 字符串转int数字
  * @str  输入的字符串
  * @return  如果小于最小值，则返回最小值；如果大于最大值，则返回最大值；如果非法，则返回0
