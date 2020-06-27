@@ -22,7 +22,7 @@
 | ---- | ----- |
 | 基础算法实现 | [Java实现-基础算法实现](src/BaseAlgorithm/Java)<br/><br/>[Kotlin实现-基础算法实现](src/BaseAlgorithm/Kotlin)<br/><br/>[Python实现-基础算法实现](src/BaseAlgorithm/Python)|
 | 剑指Offer | [Java实现-剑指Offer](src/SwordOffer/JavaOffer)<br/><br/>[Kotlin实现-剑指Offer](src/SwordOffer/KotlinOffer) |
-| LeetCode | [Java实现-LeetCode](src/LeetCode/Java)<br/><br/>[Python实现-LeetCode](src/LeetCode/Python)<br/><br/> [JavaScript实现-LeetCode](src/LeetCode/JavaScript)|<br/><br/>[C++实现-LeetCode](src/LeetCode/C++)
+| LeetCode | [Java实现-LeetCode](src/LeetCode/Java)<br/><br/>[Python实现-LeetCode](src/LeetCode/Python)<br/><br/> [JavaScript实现-LeetCode](src/LeetCode/JavaScript)<br/><br/>[C++实现-LeetCode](src/LeetCode/C++) |
 
 ## 面试题型
 
