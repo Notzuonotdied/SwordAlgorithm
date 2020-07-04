@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import common.java.ListNode;
+
 public class Demo55 {
     public static void main(String[] args) {
 
@@ -26,15 +28,6 @@ public class Demo55 {
                 slow = slow.next;
             }
             return fast;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
         }
     }
 }

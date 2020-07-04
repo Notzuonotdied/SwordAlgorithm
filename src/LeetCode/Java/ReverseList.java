@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class ReverseList {
     public static void main(String[] args) {
         ListNode head = new ListNode(0);
@@ -28,15 +30,6 @@ public class ReverseList {
                 curr = nextTemp;
             }
             return prev;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
         }
     }
 

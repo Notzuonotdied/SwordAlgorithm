@@ -1,6 +1,6 @@
 package SwordOffer.JavaOffer;
 
-import LeetCode.Java.component.TreeNode;
+import common.java.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

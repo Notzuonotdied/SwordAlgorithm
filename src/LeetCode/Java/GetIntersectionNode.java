@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class GetIntersectionNode {
     public static void main(String[] args) {
 
@@ -28,16 +30,6 @@ public class GetIntersectionNode {
                 pB = pB == null ? headA : pB.next;
             }
             return pA;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
         }
     }
 }

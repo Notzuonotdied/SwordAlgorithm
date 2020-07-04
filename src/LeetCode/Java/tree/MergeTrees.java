@@ -1,6 +1,6 @@
 package LeetCode.Java.tree;
 
-import LeetCode.Java.component.TreeNode;
+import common.java.TreeNode;
 
 public class MergeTrees {
     public static void main(String[] args) {

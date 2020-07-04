@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class MergeTwoLists {
     public static void main(String[] args) {
         ListNode head1 = new ListNode(1);
@@ -43,15 +45,6 @@ public class MergeTwoLists {
             }
             head.next = l1 == null ? l2 : l1;
             return root.next;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
         }
     }
 }

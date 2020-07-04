@@ -1,6 +1,6 @@
 package LeetCode.Java.offer;
 
-import LeetCode.Java.component.TreeNode;
+import common.java.TreeNode;
 
 import java.util.Deque;
 import java.util.LinkedList;

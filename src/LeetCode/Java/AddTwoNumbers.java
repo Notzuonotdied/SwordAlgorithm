@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class AddTwoNumbers {
     public static void main(String[] args) {
         ListNode l1 = new ListNode(9);
@@ -98,15 +100,6 @@ public class AddTwoNumbers {
                 point.next = new ListNode(1);
             }
             return head.next;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
         }
     }
 }

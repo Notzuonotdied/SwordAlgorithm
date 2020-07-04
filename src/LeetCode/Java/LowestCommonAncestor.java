@@ -1,6 +1,6 @@
 package LeetCode.Java;
 
-import LeetCode.Java.component.TreeNode;
+import common.java.TreeNode;
 
 public class LowestCommonAncestor {
     public static void main(String[] args) {

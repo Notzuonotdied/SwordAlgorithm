@@ -1,4 +1,4 @@
-package LeetCode.Java.component;
+package common.java;
 
 public class TreeNode {
     public int val;

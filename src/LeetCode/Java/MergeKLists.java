@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class MergeKLists {
     public static void main(String[] args) {
 
@@ -56,15 +58,6 @@ public class MergeKLists {
                 listNodeRight.next = merge(listNodeLeft, listNodeRight.next);
                 return listNodeRight;
             }
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
         }
     }
 }

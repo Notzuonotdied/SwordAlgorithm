@@ -1,6 +1,6 @@
 package SwordOffer.JavaOffer;
 
-import LeetCode.Java.component.TreeNode;
+import common.java.TreeNode;
 
 public class Demo18 {
 

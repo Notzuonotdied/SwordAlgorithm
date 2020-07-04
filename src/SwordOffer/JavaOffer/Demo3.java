@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import common.java.ListNode;
+
 import java.util.ArrayList;
 
 import java.util.Stack;
@@ -32,15 +34,6 @@ public class Demo3 {
             vals.add(nodeStack.pop().val);
         }
         return vals;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
     }
 }
 

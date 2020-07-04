@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class HasCycle {
     public static void main(String[] args) {
 
@@ -31,16 +33,6 @@ public class HasCycle {
                 fast = fast.next.next;
             }
             return true;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
-            next = null;
         }
     }
 }

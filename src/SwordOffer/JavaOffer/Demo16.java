@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import common.java.ListNode;
+
 public class Demo16 {
 
     public static void main(String[] args) {
@@ -80,14 +82,5 @@ public class Demo16 {
 
         // 返回处理结果
         return root.next;
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
-        }
     }
 }

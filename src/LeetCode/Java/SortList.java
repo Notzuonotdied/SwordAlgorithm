@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class SortList {
     public static void main(String[] args) {
 
@@ -43,15 +45,6 @@ public class SortList {
             }
             h.next = left != null ? left : right;
             return res.next;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
         }
     }
 

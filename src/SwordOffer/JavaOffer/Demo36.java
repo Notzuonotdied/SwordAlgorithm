@@ -1,5 +1,7 @@
 package SwordOffer.JavaOffer;
 
+import common.java.ListNode;
+
 public class Demo36 {
     public static void main(String[] args) {
 
@@ -14,15 +16,6 @@ public class Demo36 {
                 p2 = (p2 == null ? pHead1 : p2.next);
             }
             return p1;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next = null;
-
-        ListNode(int val) {
-            this.val = val;
         }
     }
 }

@@ -1,5 +1,7 @@
 package LeetCode.Java;
 
+import common.java.ListNode;
+
 public class RotateRight {
     public static void main(String[] args) {
         ListNode root = new ListNode(1);
@@ -40,15 +42,6 @@ public class RotateRight {
             newTail.next = null;
 
             return newHead;
-        }
-    }
-
-    private static class ListNode {
-        int val;
-        ListNode next;
-
-        ListNode(int x) {
-            val = x;
         }
     }
 
