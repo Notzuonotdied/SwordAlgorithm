@@ -79,7 +79,7 @@ std::string Reverse(const std::string &s)
     while(!tmp_char_size.empty())
     {
         c = tmp_char_beg.top();
-        result.append(c, c + tmp_char_size.top());
+        result.append(c, tmp_char_size.top());
         tmp_char_beg.pop();
         tmp_char_size.pop();
     }
