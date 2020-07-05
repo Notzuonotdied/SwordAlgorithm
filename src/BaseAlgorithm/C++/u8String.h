@@ -32,6 +32,9 @@ extern std::size_t GetLength(const std::string &s);
  */
 extern std::string SubString(const std::string &s, std::size_t index, std::size_t len);
 
+// 反转
+extern std::string Reverse(const std::string &s);
+
 }
 
 #endif // U8_STRING_H

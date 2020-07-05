@@ -1,4 +1,5 @@
 #include "u8String.h"
+#include <stack>
 
 namespace utf8
 {
@@ -14,7 +15,10 @@ constexpr
 std::size_t GetByteSize(unsigned char c)
 {
     std::size_t byte_size = 0;
-    while(u8Size[byte_size++] < c);
+    while(u8Size[byte_size] < c)
+    {
+        ++byte_size;
+    }
     return byte_size;
 }
 
@@ -49,6 +53,35 @@ std::string SubString(const std::string &s, std::size_t index, std::size_t len)
         {
             break;
         }
+    }
+
+    return result;
+}
+
+// 反转
+std::string Reverse(const std::string &s)
+{
+    std::stack<const char *> tmp_char_beg;
+    std::stack<std::size_t> tmp_char_size;
+    std::string result;
+
+    const char *c = s.data();
+    const char *end = s.data() + s.length();
+
+    while(c < end)
+    {
+        std::size_t byte_size = GetByteSize(*c);
+        tmp_char_beg.push(c);
+        tmp_char_size.push(byte_size);
+        c += byte_size;
+    }
+
+    while(!tmp_char_size.empty())
+    {
+        c = tmp_char_beg.top();
+        result.append(c, c + tmp_char_size.top());
+        tmp_char_beg.pop();
+        tmp_char_size.pop();
     }
 
     return result;
