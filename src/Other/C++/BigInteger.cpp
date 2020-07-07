@@ -1,12 +1,5 @@
 #include "BigInteger.h"
-
-namespace std
-{
-
-BigInteger abs(const BigInteger &bi)
-{ return bi.abs(); }
-
-}
+#include <cstring>
 
 static bool IsZero(const char *c, std::size_t len)
 {
@@ -34,11 +27,11 @@ static bool IsZero(const char *c, std::size_t len)
 
 bool _M_BigInteger_Base::LessThan(const _M_BigInteger_Base &v) const
 {
-    if(Symbol() && !v.Symbol())
+    if(Symbol() == SYMBOL::NEGATIVE && v.Symbol() == SYMBOL::POSITIVE)
     {
         return false;
     }
-    else if(v.Symbol() && !Symbol())
+    else if(v.Symbol() == SYMBOL::POSITIVE && Symbol() == SYMBOL::NEGATIVE)
     {
         return true;
     }
@@ -59,9 +52,9 @@ bool _M_BigInteger_Base::LessThan(const _M_BigInteger_Base &v) const
 
     while(len-- > 1)
     {
-        if(str1[len] < str2[len])
+        if(str1[len] >= str2[len])
         {
-            return true;
+            return false;
         }
     }
 
@@ -70,11 +63,11 @@ bool _M_BigInteger_Base::LessThan(const _M_BigInteger_Base &v) const
 
 bool _M_BigInteger_Base::GreaterThan(const _M_BigInteger_Base &v) const
 {
-    if(Symbol() && !v.Symbol())
+    if(Symbol() == SYMBOL::NEGATIVE && v.Symbol() == SYMBOL::POSITIVE)
     {
         return true;
     }
-    else if(v.Symbol() && !Symbol())
+    else if(v.Symbol() == SYMBOL::NEGATIVE && Symbol() == SYMBOL::POSITIVE)
     {
         return false;
     }
@@ -95,13 +88,13 @@ bool _M_BigInteger_Base::GreaterThan(const _M_BigInteger_Base &v) const
 
     while(len-- > 1)
     {
-        if(str1[len] > str2[len])
+        if(str1[len] <= str2[len])
         {
-            return true;
+            return false;
         }
     }
 
-    return false;
+    return true;
 }
 
 bool _M_BigInteger_Base::EqualTo(const _M_BigInteger_Base &v) const
@@ -160,18 +153,18 @@ std::ostream& operator<<(std::ostream &os, const BigInteger &bi)
 BigInteger BigInteger::abs() const
 {
     BigInteger result(*this);
-    result.Symbol() = 0;
+    result.Symbol() = SYMBOL::POSITIVE;
     return result;
 }
 
-BigInteger BigInteger::operator=(const BigInteger &v)
+BigInteger& BigInteger::operator=(const BigInteger &v)
 {
     Copy(v);
-    return v;
+    return *this;
 }
 
 #if __cplusplus >= 201103L
-BigInteger BigInteger::operator=(BigInteger &&v)
+BigInteger& BigInteger::operator=(BigInteger &&v)
 {
     Swap(v);
     return *this;
@@ -182,14 +175,15 @@ BigInteger BigInteger::operator=(BigInteger &&v)
  *************** 运算符实现 *************
  ***************************************/
 
+// 两数相加
 void _M_BigInteger_Add_Impl::Add(_M_BigInteger_Base &v1, const _M_BigInteger_Base &v2)
 {
-    if(v1.Symbol() && !v2.Symbol())
+    if(v1.Symbol() == SYMBOL::NEGATIVE && v2.Symbol() == SYMBOL::POSITIVE)
     {
         _M_BigInteger_Sub_Impl()(v1, v2);
         return;
     }
-    if(!v1.Symbol() && v2.Symbol())
+    if(v1.Symbol() == SYMBOL::POSITIVE && v2.Symbol() == SYMBOL::NEGATIVE)
     {
         _M_BigInteger_Base v = _M_BigInteger_Sub_Impl()(v2, v1);
         v1.Swap(v);
@@ -197,8 +191,8 @@ void _M_BigInteger_Add_Impl::Add(_M_BigInteger_Base &v1, const _M_BigInteger_Bas
     }
 
     std::size_t index = 1;
-    char *num1 = v1._M_data.data(), *end1 = v1._M_data.data() + v1._M_data.size();
-    const char *num2 = v2._M_data.data() + 1, *end2 = v2._M_data.data() + v2._M_data.size();
+    char *num1 = v1._M_data.data(), *end1 = num1 + v1._M_data.size();
+    const char *num2 = v2._M_data.data() + 1, *end2 = num2 + v2._M_data.size();
 
     char c = 0, v;
     while(num1 + index < end1 || num2 < end2)
@@ -216,9 +210,9 @@ void _M_BigInteger_Add_Impl::Add(_M_BigInteger_Base &v1, const _M_BigInteger_Bas
 
         if(num1 + index == end1)
         {
-            end1 += v1._M_data.size();
             v1._M_data.resize(v1._M_data.size() * 2);
             num1 = v1._M_data.data();
+            end1 = num1 + v1._M_data.size();
         }
 
         *(num1 + index++) = v % 10;
@@ -244,19 +238,56 @@ _M_BigInteger_Base _M_BigInteger_Add_Impl::Add(const _M_BigInteger_Base &v1, con
     return v;
 }
 
+// 两数相减
 void _M_BigInteger_Sub_Impl::Sub(_M_BigInteger_Base &v1, const _M_BigInteger_Base &v2)
 {
-    if(!v1.Symbol() && v2.Symbol())
+    if(v1.Symbol() == SYMBOL::POSITIVE && v2.Symbol() == SYMBOL::NEGATIVE)
     {
         _M_BigInteger_Add_Impl()(v1, v2);
         return;
     }
-    if(v1.Symbol() && !v2.Symbol())
+
+    if(v1.Symbol() == SYMBOL::NEGATIVE && v2.Symbol() == SYMBOL::POSITIVE)
     {
         _M_BigInteger_Base v = _M_BigInteger_Add_Impl()(v2, v1);
         v1.Swap(v);
         return;
     }
+
+    if((v1.Symbol() == SYMBOL::NEGATIVE) ^ v1.LessThan(v2))
+    {
+        _M_BigInteger_Base v(v2);
+        Sub(v, v1);
+        v.Swap(v1);
+        v1.ReverseSymbol();
+        return;
+    }
+
+    // 这里保证了v1不小于v2
+    char *num1 = v1._M_data.data(), *end1 = num1 + v1._M_data.size();
+    const char *num2 = v2._M_data.data() + 1, *end2 = num2 + v2._M_data.size();
+
+    char c = 0;
+    while(num2 < end2)
+    {
+        if(*num1 - c < *num2)
+        {
+            *num1 = 10 + *num1 - *num2;
+            c = 1;
+        }
+        else 
+        {
+            *num1 -= *num2;
+        }
+
+        if(++num1 >= end1)
+        {
+            break;
+        }
+        ++num2;
+    }
+
+    *num1 -= c;
 }
 
 _M_BigInteger_Base _M_BigInteger_Sub_Impl::Sub(const _M_BigInteger_Base &v1, const _M_BigInteger_Base &v2) const

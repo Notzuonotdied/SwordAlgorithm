@@ -6,11 +6,6 @@
 
 class BigInteger;
 
-namespace std
-{
-extern BigInteger abs(const BigInteger &bi);
-}
-
 #ifndef BIG_INT_DEFAULT_SIZE
 #define BIG_INT_DEFAULT_SIZE 32
 #endif
@@ -20,6 +15,15 @@ extern BigInteger abs(const BigInteger &bi);
 #error "BIG_INT_DEFAULT_SIZE cannot less than 2"
 #endif 
 #endif
+
+namespace SYMBOL
+{
+    enum SYMBOL : bool
+    {
+        POSITIVE = 0,
+        NEGATIVE = 1 
+    };
+}
 
 struct _M_BigInteger_Base
 {
@@ -35,18 +39,17 @@ struct _M_BigInteger_Base
 #endif // __cplusplus >= 201103L
 
     template<typename _Tp>
-    _M_BigInteger_Base(const _Tp &v)
-     : _M_data(BIG_INT_DEFAULT_SIZE)
-    { SetValue<_Tp>(v); }
-
-    template<typename _Tp>
     void SetValue(const _Tp &v)
     {
-        _M_data[0] = static_cast<char>(v < 0);
-        _Tp tmp = std::abs(v);
+        _M_data[0] = v < 0 ? SYMBOL::NEGATIVE : SYMBOL::POSITIVE;
+        _Tp tmp = v < 0 ? (0 - v) : v;
         std::size_t index = 1;
         while(tmp > 0)
         {
+            if(index == _M_data.size())
+            {
+                _M_data.resize(_M_data.size() * 2);
+            }
             _M_data[index++] = tmp % 10;
             tmp /= 10;
         }
@@ -58,12 +61,15 @@ struct _M_BigInteger_Base
     void Swap(_M_BigInteger_Base &v)
     { v._M_data.swap(_M_data); }
 
-    // 符号，非负数——false，负数——true
-    bool Symbol() const 
-    { return _M_data[0] != 0; }
+    // 符号，SYMBOL
+    SYMBOL::SYMBOL Symbol() const 
+    { return static_cast<SYMBOL::SYMBOL>(_M_data[0]); }
 
-    char& Symbol()
-    { return _M_data[0]; }
+    SYMBOL::SYMBOL& Symbol()
+    { return *reinterpret_cast<SYMBOL::SYMBOL *>(&_M_data[0]); }
+
+    void ReverseSymbol()
+    { _M_data[0] = 1 - _M_data[0]; }
 
     bool LessThan(const _M_BigInteger_Base &v) const;
 
@@ -136,88 +142,238 @@ class BigInteger
 public:
     BigInteger() : _M_BigInteger_Base() { }
     BigInteger(const BigInteger &bi) : _M_BigInteger_Base(bi) { }
-    template<typename _Tp>
-    BigInteger(const _Tp &v) : _M_BigInteger_Base(v) { }
+    BigInteger(const _M_BigInteger_Base &bi) : _M_BigInteger_Base(bi) { }
+
 #if __cplusplus >= 201103L
     BigInteger(BigInteger &&bi) : _M_BigInteger_Base(std::move(bi)) { }
+    BigInteger(_M_BigInteger_Base &&bi) : _M_BigInteger_Base(std::move(bi)) { }
 #endif // __cplusplus >= 201103L
 
-    BigInteger operator=(long long v)
+    BigInteger(char v) : _M_BigInteger_Base() 
+    { SetValue<char>(v); }
+    BigInteger(short v) : _M_BigInteger_Base() 
+    { SetValue<short>(v); }
+    BigInteger(int v) : _M_BigInteger_Base() 
+    { SetValue<int>(v); }
+    BigInteger(long v) : _M_BigInteger_Base() 
+    { SetValue<long>(v); }
+    BigInteger(long long v) : _M_BigInteger_Base() 
     { SetValue<long long>(v); }
-    BigInteger operator=(float v)
-    { return *this = static_cast<long long>(v); }
-    BigInteger operator=(double v)
-    { return *this = static_cast<long long>(v); }
-    BigInteger operator=(unsigned long long v)
+    BigInteger(unsigned char v) : _M_BigInteger_Base() 
+    { SetValue<unsigned char>(v); }
+    BigInteger(unsigned short v) : _M_BigInteger_Base() 
+    { SetValue<unsigned short>(v); }
+    BigInteger(unsigned int v) : _M_BigInteger_Base() 
+    { SetValue<unsigned int>(v); }
+    BigInteger(unsigned long v) : _M_BigInteger_Base() 
+    { SetValue<unsigned long>(v); }
+    BigInteger(unsigned long long v) : _M_BigInteger_Base() 
     { SetValue<unsigned long long>(v); }
-    BigInteger operator=(const BigInteger &v);
+
+    BigInteger& operator=(char v)
+    { SetValue<char>(v); return *this; }
+    BigInteger& operator=(short v)
+    { SetValue<short>(v); return *this; }
+    BigInteger& operator=(int v)
+    { SetValue<int>(v); return *this; }
+    BigInteger& operator=(long v)
+    { SetValue<long>(v); return *this; }
+    BigInteger& operator=(long long v)
+    { SetValue<long long>(v); return *this; }
+    BigInteger& operator=(float v)
+    { return *this = static_cast<long long>(v); }
+    BigInteger& operator=(double v)
+    { return *this = static_cast<long long>(v); }
+    BigInteger& operator=(unsigned char v)
+    { SetValue<unsigned char>(v); return *this; }
+    BigInteger& operator=(unsigned short v)
+    { SetValue<unsigned short>(v); return *this; }
+    BigInteger& operator=(unsigned int v)
+    { SetValue<unsigned int>(v); return *this; }
+    BigInteger& operator=(unsigned long v)
+    { SetValue<unsigned long>(v); return *this; }
+    BigInteger& operator=(unsigned long long v)
+    { SetValue<unsigned long long>(v); return *this; }
+    BigInteger& operator=(const BigInteger &v);
 #if __cplusplus >= 201103L
-    BigInteger operator=(BigInteger &&v);
+    BigInteger& operator=(BigInteger &&v);
 #endif // __cplusplus >= 201103L
 
+    bool operator==(char v) const
+    { return *this == BigInteger(v); }
+    bool operator==(short v) const
+    { return *this == BigInteger(v); }
+    bool operator==(int v) const
+    { return *this == BigInteger(v); }
+    bool operator==(long v) const
+    { return *this == BigInteger(v); }
     bool operator==(long long v) const
     { return *this == BigInteger(v); }
     bool operator==(float v) const
     { return v == static_cast<long long>(v) && *this == BigInteger(static_cast<long long>(v)); }
     bool operator==(double v) const
     { return v == static_cast<long long>(v) && *this == BigInteger(static_cast<long long>(v)); }
+    bool operator==(unsigned char v) const
+    { return *this == BigInteger(v); }
+    bool operator==(unsigned short v) const
+    { return *this == BigInteger(v); }
+    bool operator==(unsigned int v) const
+    { return *this == BigInteger(v); }
+    bool operator==(unsigned long v) const
+    { return *this == BigInteger(v); }
     bool operator==(unsigned long long v) const
     { return *this == BigInteger(v); }
     bool operator==(const BigInteger &v) const
     { return EqualTo(v); }
 
+    bool operator>(char v) const
+    { return *this > BigInteger(v); }
+    bool operator>(short v) const
+    { return *this > BigInteger(v); }
+    bool operator>(int v) const
+    { return *this > BigInteger(v); }
+    bool operator>(long v) const
+    { return *this > BigInteger(v); }
     bool operator>(long long v) const
     { return *this > BigInteger(v); }
     bool operator>(float v) const
     { return *this > BigInteger(static_cast<long long>(v)); }
     bool operator>(double v) const
     { return *this > BigInteger(static_cast<long long>(v)); }
+    bool operator>(unsigned char v) const
+    { return *this > BigInteger(v); }
+    bool operator>(unsigned short v) const
+    { return *this > BigInteger(v); }
+    bool operator>(unsigned int v) const
+    { return *this > BigInteger(v); }
+    bool operator>(unsigned long v) const
+    { return *this > BigInteger(v); }
     bool operator>(unsigned long long v) const
     { return *this > BigInteger(v); }
     bool operator>(const BigInteger &v) const
     { return GreaterThan(v); }
 
+    bool operator>=(char v) const
+    { return *this >= BigInteger(v); }
+    bool operator>=(short v) const
+    { return *this >= BigInteger(v); }
+    bool operator>=(int v) const
+    { return *this >= BigInteger(v); }
+    bool operator>=(long v) const
+    { return *this >= BigInteger(v); }
     bool operator>=(long long v) const
     { return *this >= BigInteger(v); }
     bool operator>=(float v) const
     { return *this >= BigInteger(static_cast<long long>(v)); }
     bool operator>=(double v) const
     { return *this >= BigInteger(static_cast<long long>(v)); }
+    bool operator>=(unsigned char v) const
+    { return *this >= BigInteger(v); }
+    bool operator>=(unsigned short v) const
+    { return *this >= BigInteger(v); }
+    bool operator>=(unsigned int v) const
+    { return *this >= BigInteger(v); }
+    bool operator>=(unsigned long v) const
+    { return *this >= BigInteger(v); }
     bool operator>=(unsigned long long v) const
     { return *this >= BigInteger(v); }
     bool operator>=(const BigInteger &v) const
     { return !LessThan(v); }
 
+    bool operator<(char v) const
+    { return *this < BigInteger(v); }
+    bool operator<(short v) const
+    { return *this < BigInteger(v); }
+    bool operator<(int v) const
+    { return *this < BigInteger(v); }
+    bool operator<(long v) const
+    { return *this < BigInteger(v); }
     bool operator<(long long v) const
     { return *this < BigInteger(v); }
     bool operator<(float v) const
     { return *this < BigInteger(static_cast<long long>(v)); }
     bool operator<(double v) const
     { return *this < BigInteger(static_cast<long long>(v)); }
+    bool operator<(unsigned char v) const
+    { return *this < BigInteger(v); }
+    bool operator<(unsigned short v) const
+    { return *this < BigInteger(v); }
+    bool operator<(unsigned int v) const
+    { return *this < BigInteger(v); }
+    bool operator<(unsigned long v) const
+    { return *this < BigInteger(v); }
     bool operator<(unsigned long long v) const
     { return *this < BigInteger(v); }
     bool operator<(const BigInteger &v) const
     { return LessThan(v); }
 
+    bool operator<=(char v) const
+    { return *this <= BigInteger(v); }
+    bool operator<=(short v) const
+    { return *this <= BigInteger(v); }
+    bool operator<=(int v) const
+    { return *this <= BigInteger(v); }
+    bool operator<=(long v) const
+    { return *this <= BigInteger(v); }
     bool operator<=(long long v) const
     { return *this <= BigInteger(v); }
     bool operator<=(float v) const
     { return *this <= BigInteger(static_cast<long long>(v)); }
     bool operator<=(double v) const
     { return *this <= BigInteger(static_cast<long long>(v)); }
+    bool operator<=(unsigned char v) const
+    { return *this <= BigInteger(v); }
+    bool operator<=(unsigned short v) const
+    { return *this <= BigInteger(v); }
+    bool operator<=(unsigned int v) const
+    { return *this <= BigInteger(v); }
+    bool operator<=(unsigned long v) const
+    { return *this <= BigInteger(v); }
     bool operator<=(unsigned long long v) const
     { return *this <= BigInteger(v); }
     bool operator<=(const BigInteger &v) const
     { return !GreaterThan(v); }
 
+    BigInteger operator/(char v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(short v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(int v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(long v) const
+    { return *this / BigInteger(v); }
     BigInteger operator/(long long v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(unsigned char v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(unsigned short v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(unsigned int v) const
+    { return *this / BigInteger(v); }
+    BigInteger operator/(unsigned long v) const
     { return *this / BigInteger(v); }
     BigInteger operator/(unsigned long long v) const
     { return *this / BigInteger(v); }
     BigInteger operator/(const BigInteger &v) const
     { return _M_BigInteger_Div_Impl::Div(*this, v); }
 
+    BigInteger& operator/=(char v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(short v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(int v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(long v)
+    { return *this /= BigInteger(v); }
     BigInteger& operator/=(long long v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(unsigned char v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(unsigned short v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(unsigned int v)
+    { return *this /= BigInteger(v); }
+    BigInteger& operator/=(unsigned long v)
     { return *this /= BigInteger(v); }
     BigInteger& operator/=(unsigned long long v)
     { return *this /= BigInteger(v); }
@@ -227,14 +383,46 @@ public:
         return *this;
     }
 
+    BigInteger operator*(char v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(short v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(int v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(long v) const
+    { return *this * BigInteger(v); }
     BigInteger operator*(long long v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(unsigned char v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(unsigned short v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(unsigned int v) const
+    { return *this * BigInteger(v); }
+    BigInteger operator*(unsigned long v) const
     { return *this * BigInteger(v); }
     BigInteger operator*(unsigned long long v) const
     { return *this * BigInteger(v); }
     BigInteger operator*(const BigInteger &v) const
     { return _M_BigInteger_Mul_Impl::Mul(*this, v); }
 
+    BigInteger& operator*=(char v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(short v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(int v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(long v)
+    { return *this *= BigInteger(v); }
     BigInteger& operator*=(long long v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(unsigned char v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(unsigned short v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(unsigned int v)
+    { return *this *= BigInteger(v); }
+    BigInteger& operator*=(unsigned long v)
     { return *this *= BigInteger(v); }
     BigInteger& operator*=(unsigned long long v)
     { return *this *= BigInteger(v); }
@@ -244,14 +432,46 @@ public:
         return *this;
     }
 
+    BigInteger operator-(char v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(short v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(int v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(long v) const
+    { return *this - BigInteger(v); }
     BigInteger operator-(long long v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(unsigned char v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(unsigned short v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(unsigned int v) const
+    { return *this - BigInteger(v); }
+    BigInteger operator-(unsigned long v) const
     { return *this - BigInteger(v); }
     BigInteger operator-(unsigned long long v) const
     { return *this - BigInteger(v); }
     BigInteger operator-(const BigInteger &v) const
     { return _M_BigInteger_Sub_Impl::Sub(*this, v); }
 
+    BigInteger& operator-=(char v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(short v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(int v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(long v)
+    { return *this -= BigInteger(v); }
     BigInteger& operator-=(long long v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(unsigned char v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(unsigned short v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(unsigned int v)
+    { return *this -= BigInteger(v); }
+    BigInteger& operator-=(unsigned long v)
     { return *this -= BigInteger(v); }
     BigInteger& operator-=(unsigned long long v)
     { return *this -= BigInteger(v); }
@@ -261,14 +481,46 @@ public:
         return *this;
     }
 
+    BigInteger operator+(char v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(short v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(int v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(long v) const
+    { return *this + BigInteger(v); }
     BigInteger operator+(long long v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(unsigned char v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(unsigned short v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(unsigned int v) const
+    { return *this + BigInteger(v); }
+    BigInteger operator+(unsigned long v) const
     { return *this + BigInteger(v); }
     BigInteger operator+(unsigned long long v) const
     { return *this + BigInteger(v); }
     BigInteger operator+(const BigInteger &v) const
     { return _M_BigInteger_Add_Impl::Add(*this, v); }
 
+    BigInteger& operator+=(char v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(short v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(int v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(long v)
+    { return *this += BigInteger(v); }
     BigInteger& operator+=(long long v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(unsigned char v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(unsigned short v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(unsigned int v)
+    { return *this += BigInteger(v); }
+    BigInteger& operator+=(unsigned long v)
     { return *this += BigInteger(v); }
     BigInteger& operator+=(unsigned long long v)
     { return *this += BigInteger(v); }
