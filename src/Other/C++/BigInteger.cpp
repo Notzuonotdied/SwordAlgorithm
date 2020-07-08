@@ -287,7 +287,10 @@ void _M_BigInteger_Sub_Impl::Sub(_M_BigInteger_Base &v1, const _M_BigInteger_Bas
         ++num2;
     }
 
-    *num1 -= c;
+    if(c != 0)
+    {
+        *num1 -= c;
+    }
 }
 
 _M_BigInteger_Base _M_BigInteger_Sub_Impl::Sub(const _M_BigInteger_Base &v1, const _M_BigInteger_Base &v2) const
