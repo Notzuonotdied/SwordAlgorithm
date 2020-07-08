@@ -278,6 +278,7 @@ void _M_BigInteger_Sub_Impl::Sub(_M_BigInteger_Base &v1, const _M_BigInteger_Bas
         else 
         {
             *num1 -= *num2;
+            c = 0;
         }
 
         if(++num1 >= end1)
