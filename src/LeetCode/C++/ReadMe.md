@@ -13,3 +13,4 @@
 | [寻找两个正序数组的中位数](FindMedianSortedArrays.h) |  | [给定两个大小为 m 和 n 的正序（从小到大）数组 nums1 和 nums2。请你找出这两个正序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/) |
 | [跳水板](DivingBoard.h) |  | [你正在使用一堆木板建造跳水板。有两种类型的木板，其中长度较短的木板长度为shorter，长度较长的木板长度为longer。你必须正好使用k块木板。编写一个方法，生成跳水板所有可能的长度。](https://leetcode-cn.com/problems/diving-board-lcci/) |
 | [不同的二叉搜索树](NumTrees.h) |  | [给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？](https://leetcode-cn.com/problems/unique-binary-search-trees/) |
+| [搜索插入位置](SearchInsert.h) |  | [给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。](https://leetcode-cn.com/problems/search-insert-position/) |
