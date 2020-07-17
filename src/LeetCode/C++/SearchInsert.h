@@ -10,7 +10,7 @@ _RandomIterator SearchInsert(_RandomIterator beg, _RandomIterator end, _ValueTyp
 
     while(*a < target && *b > target)
     {
-        mid = (a + b) / 2;
+        mid = a + (b - a) / 2;
         
         if(*mid == target)
         {
