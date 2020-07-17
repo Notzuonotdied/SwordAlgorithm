@@ -47,12 +47,10 @@ static void SearchInsert()
 {
     int v[]{1, 3, 5, 6};
     
-    std::cout << SearchInsert(v, v + sizeof(v) / sizeof(v[0]), 2) - v << std::endl;
-    std::cout << SearchInsert(v, v + sizeof(v) / sizeof(v[0]), 5) - v << std::endl;
-    std::cout << SearchInsert(v, v + sizeof(v) / sizeof(v[0]), 6) - v << std::endl;
-    std::cout << SearchInsert(v, v + sizeof(v) / sizeof(v[0]), 0) - v << std::endl;
-
-    delete[] v;
+    std::cout << SearchInsert<int *, int>(v, v + sizeof(v) / sizeof(v[0]), 2) - v << std::endl;
+    std::cout << SearchInsert<int *, int>(v, v + sizeof(v) / sizeof(v[0]), 5) - v << std::endl;
+    std::cout << SearchInsert<int *, int>(v, v + sizeof(v) / sizeof(v[0]), 6) - v << std::endl;
+    std::cout << SearchInsert<int *, int>(v, v + sizeof(v) / sizeof(v[0]), 0) - v << std::endl;
 }
 
 #endif // SEARCH_INSERT_H
