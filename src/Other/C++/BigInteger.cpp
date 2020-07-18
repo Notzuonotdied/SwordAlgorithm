@@ -303,13 +303,30 @@ _M_BigInteger_Base _M_BigInteger_Sub_Impl::Sub(const _M_BigInteger_Base &v1, con
 
 void _M_BigInteger_Mul_Impl::Mul(_M_BigInteger_Base &v1, const _M_BigInteger_Base &v2)
 {
-
+    _M_BigInteger_Base v = const_cast<const _M_BigInteger_Mul_Impl *>(this)->Mul(v1, v2);
+    v1.Swap(v);
 }
 
 _M_BigInteger_Base _M_BigInteger_Mul_Impl::Mul(const _M_BigInteger_Base &v1, const _M_BigInteger_Base &v2) const
 {
-    _M_BigInteger_Base v(v1);
-    const_cast<_M_BigInteger_Mul_Impl *>(this)->Mul(v, v2);
+    _M_BigInteger_Base v;
+    std::size_t s1 = v1._M_data.size(), s2 = v2._M_data.size();
+    v._M_data.resize(s1 + s2);
+
+    unsigned int carry = 0;
+    for(std::size_t i = 0; i < s1; ++i)
+    {
+        unsigned int r = 0, c = 0, temp;
+        for(std::size_t j = 0; j < s2; ++j)
+        {
+            r += v1._M_data[i] * v2._M_data[j];
+            c += r / 10;
+            r %= 10;
+        }
+        temp = r + carry; // 加上上一位的进位
+        v._M_data[i] = temp % 10;// 当前位的值
+        carry = temp / 10 + c;// 下一位的进位
+    }
     return v;
 }
 
