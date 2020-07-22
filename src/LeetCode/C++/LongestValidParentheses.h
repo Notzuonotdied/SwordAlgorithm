@@ -8,7 +8,7 @@
  * 求最长有效括号字串
  * 给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。
  */
-static int LongestValidParentheses(const std::string &str)
+static long LongestValidParentheses(const std::string &str)
 {
     std::vector<bool> v(str.size(), false);
     std::stack<long> s;

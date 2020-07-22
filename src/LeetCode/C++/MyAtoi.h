@@ -3,6 +3,10 @@
 
 #include <string>
 
+/* 字符串转数值
+ * @str  输入的字符串
+ * @return  结果，不检查溢出
+ */
 template<typename _ResultType>
 _ResultType MyAtoi(const std::string &str)
 {
