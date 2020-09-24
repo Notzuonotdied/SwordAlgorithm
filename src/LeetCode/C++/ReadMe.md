@@ -15,3 +15,4 @@
 | [不同的二叉搜索树](NumTrees.h) |  | [给定一个整数 n，求以 1 ... n 为节点组成的二叉搜索树有多少种？](https://leetcode-cn.com/problems/unique-binary-search-trees/) |
 | [搜索插入位置](SearchInsert.h) |  | [给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。](https://leetcode-cn.com/problems/search-insert-position/) |
 | [最长有效括号](LongestValidParentheses.h) |  | [给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。](https://leetcode-cn.com/problems/longest-valid-parentheses/) |
+| [三数之和](ThreeSum.h) |  | [给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。](https://leetcode-cn.com/problems/3sum/) |
