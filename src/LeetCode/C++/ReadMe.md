@@ -16,3 +16,4 @@
 | [搜索插入位置](SearchInsert.h) |  | [给定一个排序数组和一个目标值，在数组中找到目标值，并返回其索引。如果目标值不存在于数组中，返回它将会被按顺序插入的位置。](https://leetcode-cn.com/problems/search-insert-position/) |
 | [最长有效括号](LongestValidParentheses.h) |  | [给定一个只包含 '(' 和 ')' 的字符串，找出最长的包含有效括号的子串的长度。](https://leetcode-cn.com/problems/longest-valid-parentheses/) |
 | [三数之和](ThreeSum.h) |  | [给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。](https://leetcode-cn.com/problems/3sum/) |
+| [Z 字形变换](ThreeSum.h) |  | [将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。](https://leetcode-cn.com/problems/zigzag-conversion/) |
