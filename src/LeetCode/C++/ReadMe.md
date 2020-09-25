@@ -18,3 +18,4 @@
 | [三数之和](ThreeSum.h) |  | [给你一个包含 n 个整数的数组 nums，判断 nums 中是否存在三个元素 a，b，c ，使得 a + b + c = 0 ？请你找出所有满足条件且不重复的三元组。](https://leetcode-cn.com/problems/3sum/) |
 | [Z 字形变换](ThreeSum.h) |  | [将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。](https://leetcode-cn.com/problems/zigzag-conversion/) |
 | [整数转罗马数字](ThreeSum.h) |  | [给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。](https://leetcode-cn.com/problems/integer-to-roman/) |
+| [最接近的三数之和](ThreeSum.h) |  | [给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。](https://leetcode-cn.com/problems/3sum-closest/) |
