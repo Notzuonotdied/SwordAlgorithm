@@ -111,4 +111,45 @@ public class FourSum {
             return quadruplets;
         }
     }
+
+    private static class Solution2 {
+        List<List<Integer>> ans = new ArrayList<>();
+        List<Integer> list = new ArrayList<>();
+        int cur = 0;
+
+        /**
+         * 使用回溯的思虑解决问题，效率不如上一种解决方案。
+         *
+         * 作者：Provencih
+         * 链接：https://leetcode-cn.com/problems/4sum/solution/mei-kan-dao-ji-ge-hui-su-de-ti-jie-na-wo-lai-xie-y/
+         * 来源：力扣（LeetCode）
+         * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+         */
+        public List<List<Integer>> fourSum(int[] nums, int target) {
+            Arrays.sort(nums);
+            dfs(nums, target, 0);
+            return ans;
+        }
+
+        void dfs(int[] nums, int target, int begin) {
+            if (list.size() == 4) {
+                if (cur == target) {
+                    ans.add(new ArrayList<>(list));
+                }
+                return;
+            }
+
+            for (int i = begin; i < nums.length; i++) {
+                if (nums.length - i < 4 - list.size()) return;
+                if (begin != i && nums[i - 1] == nums[i]) continue;
+                if (i < nums.length - 1 && cur + nums[i] + (3 - list.size()) * nums[i + 1] > target) return;
+                if (i < nums.length - 1 && cur + nums[i] + (3 - list.size()) * nums[nums.length - 1] < target) continue;
+                cur += nums[i];
+                list.add(nums[i]);
+                dfs(nums, target, i + 1);
+                list.remove(list.size() - 1);
+                cur -= nums[i];
+            }
+        }
+    }
 }
