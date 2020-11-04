@@ -22,6 +22,7 @@
 | [面试题 04.04. 检查平衡性](IsBalanced.java) |  递归 | [实现一个函数，检查二叉树是否平衡。在这个问题中，平衡树的定义如下：任意一个节点，其两棵子树的高度差不超过 1。](https://leetcode-cn.com/problems/check-balance-lcci/) |
 | [路径总和 III](PathSum.java) |  递归、回溯、前缀和 | [给定一个二叉树，它的每个结点都存放着一个整数值。找出路径和等于给定数值的路径总数。](https://leetcode-cn.com/problems/path-sum-iii/) |
 | [102. 二叉树的层序遍历](LevelOrder.java) |  BFS | [给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) |
+| [二叉树的中序遍历](InorderTraversal.java) | 递归、栈 | [给定一个二叉树，返回它的中序 遍历。](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) |
 
 # 附录
 
