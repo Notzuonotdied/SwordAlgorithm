@@ -22,7 +22,6 @@
 | [加一](PlusOne.java) | | [给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。](https://leetcode-cn.com/problems/plus-one/) |
 | [合并两个有序数组](MergeOrderlyArray.java) | | [给你两个有序整数数组nums1和nums2，请你将nums2合并到nums1中，使num1成为一个有序数组。](https://leetcode-cn.com/problems/merge-sorted-array/) |
 | [反转字符串](ReverseString.java) | | [编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 char[] 的形式给出。](https://leetcode-cn.com/problems/reverse-string/) |
-| [全排列](Permute.java) | 回溯算法-简单 | [给定一个 没有重复 数字的序列，返回其所有可能的全排列。](https://leetcode-cn.com/problems/permutations/) |
 | [反转字符串中的单词 III](ReverseWords.java) | | [给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) |
 | [反转链表](ReverseList.java) | | [反转一个单链表。](https://leetcode-cn.com/problems/reverse-linked-list/) |
 | [除自身以外数组的乘积](ProductExceptSelf.java) |   | [给你一个长度为 n 的整数数组 nums，其中 n > 1，返回输出数组 output ，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。](https://leetcode-cn.com/problems/product-of-array-except-self/) |
@@ -39,14 +38,12 @@
 | [字符串相乘](Multiply.java) |  乘法-竖式运算 | [给定两个以字符串形式表示的非负整数 num1 和 num2，返回 num1 和 num2 的乘积，它们的乘积也表示为字符串形式。](https://leetcode-cn.com/problems/multiply-strings/) |
 | [环形链表](HasCycle.java) |  快慢指针 | [给定一个链表，判断链表中是否有环。](https://leetcode-cn.com/problems/linked-list-cycle/) |
 | [环形链表 II](DetectCycle.java) |  快慢指针 | [给定一个链表，返回链表开始入环的第一个节点。 如果链表无环，则返回 null。](https://leetcode-cn.com/problems/linked-list-cycle-ii/) |
-| [最大子序和](MaxSubArray.java) |  贪心 | [给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。](https://leetcode-cn.com/problems/maximum-subarray/) |
 | [排序链表](SortList.java) |  归并排序变形 | [在 O(n log n) 时间复杂度和常数级空间复杂度下，对链表进行排序。](https://leetcode-cn.com/problems/sort-list/) |
 | [螺旋矩阵](SpiralOrder.java) |   | [请按照顺时针螺旋顺序，返回矩阵中的所有元素。](https://leetcode-cn.com/problems/spiral-matrix/) |
 | [螺旋矩阵 II](GenerateMatrix.java) |   | [给定一个正整数 n，生成一个包含 1 到 n2 所有元素，且元素按顺时针顺序螺旋排列的正方形矩阵。](https://leetcode-cn.com/problems/spiral-matrix-ii/) |
 | [旋转链表](RotateRight.java) |   | [给定一个链表，旋转链表，将链表每个节点向右移动 k 个位置，其中 k 是非负数。](https://leetcode-cn.com/problems/rotate-list/) |
 | [二叉树的最大深度](MaxDepth.java) |  DFS   | [给定一个二叉树，找出其最大深度。](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree/) |
 | [2的幂](IsPowerOfTwo.java) | 数学归纳法 | [给定一个整数，编写一个函数来判断它是否是 2 的幂次方。](https://leetcode-cn.com/problems/power-of-two/) |
-| [不同路径](UniquePaths.java) | 动态规划-简单 | [一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？](https://leetcode-cn.com/problems/unique-paths/) |
 | [子集](Subsets.java) |  位掩码 | [给定一组不含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets/) |
 | [二叉搜索树的最近公共祖先](LowestCommonAncestor.java) |  利用二叉搜索树的特性 | [给定一个二叉搜索树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |
 | [二叉树的最近公共祖先](LowestCommonAncestor1.java) |  递归 | [给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/) |

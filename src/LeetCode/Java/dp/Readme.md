@@ -44,6 +44,7 @@
 | [面试题14- II. 剪绳子 II](CuttingRope.java) |  数学归纳+贪心  | [给你一根长度为 n 的绳子，请把绳子剪成整数长度的 m 段（m、n都是整数，n>1并且m>1），每段绳子的长度记为 k[0],k[1]...k[m] 。请问 k[0]*k[1]*...*k[m] 可能的最大乘积是多少？例如，当绳子的长度是8时，我们把它剪成长度分别为2、3、3的三段，此时得到的最大乘积是18。答案需要取模 1e9+7（1000000007），如计算初始结果为：1000000008，请返回 1。](https://leetcode-cn.com/problems/jian-sheng-zi-ii-lcof/) |
 | ✨[面试题 17.06. 2出现的次数](NumberOf2sInRange.java) | 数位DP+归纳分析 | [编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。](https://leetcode-cn.com/problems/number-of-2s-in-range-lcci/)<br/><br/>推荐阅读下题解，完整的✨**数位DP**✨分析逻辑。 |
 | [面试题43. 1～n整数中1出现的次数](CountDigitOne.java) | 数位DP+归纳分析 | [输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/) |
+| [不同路径](UniquePaths.java) | 动态规划-简单 | [一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？](https://leetcode-cn.com/problems/unique-paths/) |
 
 ### [面试题14- II. 剪绳子 II](CuttingRope.java)推导思路
 

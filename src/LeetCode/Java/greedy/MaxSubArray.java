@@ -1,4 +1,4 @@
-package LeetCode.Java;
+package LeetCode.Java.greedy;
 
 public class MaxSubArray {
     public static void main(String[] args) {
