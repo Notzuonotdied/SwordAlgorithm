@@ -24,6 +24,7 @@
 | [102. 二叉树的层序遍历](LevelOrder.java) |  BFS | [给你一个二叉树，请你返回其按 层序遍历 得到的节点值。 （即逐层地，从左到右访问所有节点）。](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/) |
 | [二叉树的前序遍历](PreorderTraversal.java) |  递归、栈 | [给你二叉树的根节点 root ，返回它节点值的 前序 遍历。](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) |
 | [二叉树的中序遍历](InorderTraversal.java) | 递归、栈 | [给定一个二叉树，返回它的中序 遍历。](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) |
+| [二叉树的后序遍历](PostorderTraversal.java) |  递归、栈 | [给定一个二叉树，返回它的 后序 遍历。](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) |
 
 # 附录
 
