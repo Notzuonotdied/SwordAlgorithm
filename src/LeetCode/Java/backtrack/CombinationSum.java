@@ -74,6 +74,7 @@ public class CombinationSum {
             }
 
             // 通过每次递归分为移动下标和不动下标来实现全盘可重复元素搜索
+            // 使用移动下标来剪枝，不处理下标小于当前下标的元素，即如果当前下标为3，仅仅处理[3, length)区间的数据
             backtrace(candidates, target, result, combine, depth + 1);
             if (target - candidates[depth] >= 0) {
                 combine.add(candidates[depth]);
