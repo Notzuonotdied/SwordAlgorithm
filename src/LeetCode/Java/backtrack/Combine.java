@@ -57,4 +57,39 @@ public class Combine {
             }
         }
     }
+
+    private static class Solution2 {
+        /**
+         * 调整了一处细节，提高了效率
+         *
+         * 执行用时：24 ms, 在所有 Java 提交中击败了39.44% 的用户
+         * 内存消耗：39.7 MB, 在所有 Java 提交中击败了95.83% 的用户
+         */
+        public List<List<Integer>> combine(int n, int k) {
+            List<List<Integer>> ans = new ArrayList<>();
+            List<Integer> combine = new ArrayList<>();
+            boolean[] visited = new boolean[n];
+            backtrace(n, k, ans, combine, visited, 0);
+            return ans;
+        }
+
+        private void backtrace(int n, int k, List<List<Integer>> ans, List<Integer> combine, boolean[] visited, int depth) {
+            if (combine.size() == k) {
+                ans.add(new ArrayList<>(combine));
+                return;
+            }
+            // 和上一题的区别在于i的值为depth
+            for (int i = depth; i < n; ++i) {
+                if (visited[i]) {
+                    break;
+                }
+                combine.add(i + 1);
+                visited[i] = true;
+                // 和上一题的区别在于depth的值为i + 1
+                backtrace(n, k, ans, combine, visited, i + 1);
+                visited[i] = false;
+                combine.remove(combine.size() - 1);
+            }
+        }
+    }
 }
