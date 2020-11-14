@@ -17,6 +17,7 @@
 | [括号生成](GenerateParenthesis.java) |  注意左右括号对称 | [数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。](https://leetcode-cn.com/problems/generate-parentheses/) |
 | [组合](Combine.java) |  回溯 | [给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。](https://leetcode-cn.com/problems/combinations/) |
 | [单词搜索](Exist.java) |  二维数组回溯 | [给定一个二维网格和一个单词，找出该单词是否存在于网格中。](https://leetcode-cn.com/problems/word-search/) |
+| [格雷编码](GrayCode.java) |   | [给定一个代表编码总位数的非负整数 n，打印其格雷编码序列。即使有多个不同答案，你也只需要返回其中一种。](https://leetcode-cn.com/problems/gray-code/) |
 
 # 附录
 
