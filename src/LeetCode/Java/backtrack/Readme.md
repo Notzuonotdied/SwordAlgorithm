@@ -16,6 +16,7 @@
 | [组合总和 II](CombinationSum2.java) |  回溯 | [给定一个数组 candidates 和一个目标数 target ，找出 candidates 中所有可以使数字和为 target 的组合。](https://leetcode-cn.com/problems/combination-sum-ii/) |
 | [括号生成](GenerateParenthesis.java) |  注意左右括号对称 | [数字 n 代表生成括号的对数，请你设计一个函数，用于能够生成所有可能的并且 有效的 括号组合。](https://leetcode-cn.com/problems/generate-parentheses/) |
 | [组合](Combine.java) |  回溯 | [给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。](https://leetcode-cn.com/problems/combinations/) |
+| [单词搜索](Exist.java) |  二维数组回溯 | [给定一个二维网格和一个单词，找出该单词是否存在于网格中。](https://leetcode-cn.com/problems/word-search/) |
 
 # 附录
 
