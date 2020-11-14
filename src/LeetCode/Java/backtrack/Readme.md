@@ -18,6 +18,7 @@
 | [组合](Combine.java) |  回溯 | [给定两个整数 n 和 k，返回 1 ... n 中所有可能的 k 个数的组合。](https://leetcode-cn.com/problems/combinations/) |
 | [单词搜索](Exist.java) |  二维数组回溯 | [给定一个二维网格和一个单词，找出该单词是否存在于网格中。](https://leetcode-cn.com/problems/word-search/) |
 | [格雷编码](GrayCode.java) |   | [给定一个代表编码总位数的非负整数 n，打印其格雷编码序列。即使有多个不同答案，你也只需要返回其中一种。](https://leetcode-cn.com/problems/gray-code/) |
+| [子集 II](SubsetsWithDup.java) |  回溯 | [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets-ii/) |
 
 # 附录
 
