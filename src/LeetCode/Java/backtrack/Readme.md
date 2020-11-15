@@ -19,6 +19,7 @@
 | [单词搜索](Exist.java) |  二维数组回溯 | [给定一个二维网格和一个单词，找出该单词是否存在于网格中。](https://leetcode-cn.com/problems/word-search/) |
 | [格雷编码](GrayCode.java) |   | [给定一个代表编码总位数的非负整数 n，打印其格雷编码序列。即使有多个不同答案，你也只需要返回其中一种。](https://leetcode-cn.com/problems/gray-code/) |
 | [子集 II](SubsetsWithDup.java) |  回溯 | [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets-ii/) |
+| [分割回文串](Partition.java) |  动态规划+回溯 | [给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回 s 所有可能的分割方案。](https://leetcode-cn.com/problems/palindrome-partitioning/) |
 
 # 附录
 
