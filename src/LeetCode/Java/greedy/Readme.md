@@ -29,6 +29,7 @@
 | [跳跃游戏 II](Jump.java) |  贪心  | [给定一个非负整数数组，你最初位于数组的第一个位置。数组中的每个元素代表你在该位置可以跳跃的最大长度。你的目标是使用最少的跳跃次数到达数组的最后一个位置。](https://leetcode-cn.com/problems/jump-game-ii/) |
 | [买卖股票的最佳时机](../dp/MaxProfit.java) | 贪心 / DP | [给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) |
 | [买卖股票的最佳时机 II](../dp/MaxProfit2.java) | 贪心 / DP  | [给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。设计一个算法来计算你所能获取的最大利润。你可以尽可能地完成更多的交易（多次买卖一支股票）。注意：你不能同时参与多笔交易（你必须在再次购买前出售掉之前的股票）。](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) |
+| [加油站](CanCompleteCircuit.java) |  贪心 | [在一条环路上有 N 个加油站，其中第 i 个加油站有汽油 gas[i] 升。你有一辆油箱容量无限的的汽车，从第 i 个加油站开往第 i+1 个加油站需要消耗汽油 cost[i] 升。你从其中的一个加油站出发，开始时油箱为空。如果你可以绕环路行驶一周，则返回出发时加油站的编号，否则返回 -1。](https://leetcode-cn.com/problems/gas-station/) |
 
 # 附录
 
