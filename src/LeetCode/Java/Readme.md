@@ -4,6 +4,9 @@
 
 # 题目
 
+<details>
+<summary>尚未分类的题目</summary>
+
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
 | [两数之和](TwoSum.java) |  | [给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。](https://leetcode-cn.com/problems/two-sum/) |
@@ -53,6 +56,24 @@
 | [逆波兰表达式求值](EvalRPN.java) |  辅助栈 | [根据逆波兰表示法，求表达式的值。](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) |
 | [汉明距离](HammingDistance.java) | 异或、相与 | [给出两个整数 x 和 y，计算它们之间的汉明距离。](https://leetcode-cn.com/problems/hamming-distance/) |
 | [盛最多水的容器](MaxArea.java) | 双指针消状态<br/>裁剪搜索空间 | [给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。](https://leetcode-cn.com/problems/container-with-most-water/) |
+
+</details>
+
+## 按照题目分类
+
+<details>
+<summary>尚未分类的题目</summary>
+
+ - [数组](array/Readme.md)
+ - [回溯算法](backtrace/Readme.md)
+ - [动态规划](dp/Readme.md)
+ - [贪心算法](greedy/Readme.md)
+ - [数学](math/Readme.md)
+ - [矩阵](matrix/Readme.md)
+ - [LeetCode 剑指Offer](offer/Readme.md)
+ - [树](tree/Readme.md)
+
+</details>
 
 # 附录
 
