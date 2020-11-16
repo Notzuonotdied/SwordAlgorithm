@@ -1,4 +1,4 @@
-package LeetCode.Java.backtrack;
+package LeetCode.Java.backtrace;
 
 public class Exist {
     public static void main(String[] args) {
