@@ -26,6 +26,7 @@
 | [整数转罗马数字](IntToRoman.java) | 贪心法 | [给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。](https://leetcode-cn.com/problems/integer-to-roman/) |
 | [最大子序和](MaxSubArray.java) |  贪心 | [给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。](https://leetcode-cn.com/problems/maximum-subarray/) |
 | [跳跃游戏](CanJump.java) |  贪心 | [给定一个非负整数数组，你最初位于数组的第一个位置。数组中的每个元素代表你在该位置可以跳跃的最大长度。判断你是否能够到达最后一个位置。](https://leetcode-cn.com/problems/jump-game/) |
+| [跳跃游戏 II](Jump.java) |  贪心  | [给定一个非负整数数组，你最初位于数组的第一个位置。数组中的每个元素代表你在该位置可以跳跃的最大长度。你的目标是使用最少的跳跃次数到达数组的最后一个位置。](https://leetcode-cn.com/problems/jump-game-ii/) |
 
 # 附录
 
