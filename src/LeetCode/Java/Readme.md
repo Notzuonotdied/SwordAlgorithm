@@ -62,7 +62,7 @@
 ## 按照题目分类
 
 <details>
-<summary>尚未分类的题目</summary>
+<summary>根据大类型分类</summary>
 
  - [数组](array/Readme.md)
  - [回溯算法](backtrace/Readme.md)
