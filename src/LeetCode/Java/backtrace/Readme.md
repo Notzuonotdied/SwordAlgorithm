@@ -20,7 +20,7 @@
 | [格雷编码](GrayCode.java) |   | [给定一个代表编码总位数的非负整数 n，打印其格雷编码序列。即使有多个不同答案，你也只需要返回其中一种。](https://leetcode-cn.com/problems/gray-code/) |
 | [子集 II](SubsetsWithDup.java) |  回溯 | [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets-ii/) |
 | [分割回文串](Partition.java) |  动态规划+回溯 | [给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回 s 所有可能的分割方案。](https://leetcode-cn.com/problems/palindrome-partitioning/) |
-
+| [面试题 08.02. 迷路的机器人](PathWithObstacles.java) |  回溯算法变种 | [设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。](https://leetcode-cn.com/problems/robot-in-a-grid-lcci/) |
 # 附录
 
  - [https://leetcode-cn.com](https://leetcode-cn.com)
