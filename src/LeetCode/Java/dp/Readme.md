@@ -24,6 +24,7 @@
 | [面试题47. 礼物的最大价值](MaxValue.java) | dp(m, n) = Max(dp(m-1, n), dp(m, n-1)) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) | dp(2)=Min(dp(0)+cost(i-2), dp(1)+cost(i-1)) |
 | [连续子数组的最大和](MaxSubArray.java) | Sum(1...n) |
+| [面试题 08.11. 硬币](WaysToChange.java) | dp(n) = (dp(n) + dp(n - coin)) % MOD |
 
 ## 题集
 
@@ -46,6 +47,7 @@
 | ✨[面试题 17.06. 2出现的次数](NumberOf2sInRange.java) | 数位DP+归纳分析 | [编写一个方法，计算从 0 到 n (含 n) 中数字 2 出现的次数。](https://leetcode-cn.com/problems/number-of-2s-in-range-lcci/)<br/><br/>推荐阅读下题解，完整的✨**数位DP**✨分析逻辑。 |
 | [面试题43. 1～n整数中1出现的次数](CountDigitOne.java) | 数位DP+归纳分析 | [输入一个整数 n ，求1～n这n个整数的十进制表示中1出现的次数。](https://leetcode-cn.com/problems/1nzheng-shu-zhong-1chu-xian-de-ci-shu-lcof/) |
 | [不同路径](UniquePaths.java) | 动态规划-简单 | [一个机器人位于一个 m x n 网格的左上角 （起始点在下图中标记为“Start” ）。机器人每次只能向下或者向右移动一步。机器人试图达到网格的右下角（在下图中标记为“Finish”）。问总共有多少条不同的路径？](https://leetcode-cn.com/problems/unique-paths/) |
+| [面试题 08.11. 硬币](WaysToChange.java) | DP | [硬币。给定数量不限的硬币，币值为25分、10分、5分和1分，编写代码计算n分有几种表示法。(结果可能会很大，你需要将结果模上1000000007)](https://leetcode-cn.com/problems/coin-lcci/) |
 
 ### [面试题14- II. 剪绳子 II](CuttingRope.java)推导思路
 
