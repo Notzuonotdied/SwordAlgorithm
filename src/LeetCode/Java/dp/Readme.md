@@ -38,6 +38,7 @@
 | [面试题47. 礼物的最大价值](MaxValue.java) | 最大值 | [在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) |  最小值 | [您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) |
 | [最小路径和](MinPathSum.java) | 最小值 | [给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。](https://leetcode-cn.com/problems/minimum-path-sum/) |
+| ✨[乘积最大子数组](MaxProduct.java) |  最大值+最新值 | [给你一个整数数组 nums ，请你找出数组中乘积最大的连续子数组（该子数组中至少包含一个数字），并返回该子数组所对应的乘积。](https://leetcode-cn.com/problems/maximum-product-subarray/) |
 
 </details>
 
