@@ -29,7 +29,7 @@
 ## 题集
 
 <details>
-<summary>动态规划 之 **最大/小值**</summary>
+<summary>动态规划 之 <strong>最大/小值</strong></summary>
 
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
@@ -41,7 +41,7 @@
 </details>
 
 <details>
-<summary>动态规划 之 **求和**</summary>
+<summary>动态规划 之 <strong>求和</strong></summary>
 
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
@@ -51,7 +51,7 @@
 
 
 <details>
-<summary>动态规划 之 **数学归纳**</summary>
+<summary>动态规划 之 <strong>数学归纳</strong></summary>
 
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
@@ -64,7 +64,7 @@
 
 
 <details>
-<summary>动态规划 之 **其他**</summary>
+<summary>动态规划 之 <strong>其他</strong></summary>
 
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
