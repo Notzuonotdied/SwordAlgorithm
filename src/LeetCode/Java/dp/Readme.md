@@ -37,6 +37,7 @@
 | [按摩师](Massage.java) | 最大值 | [一个有名的按摩师会收到源源不断的预约请求，每个预约都可以选择接或不接。在每次预约服务之间要有休息时间，因此她不能接受相邻的预约。给定一个预约请求序列，替按摩师找到最优的预约集合（总预约时间最长），返回总的分钟数。](https://leetcode-cn.com/problems/the-masseuse-lcci/) |
 | [面试题47. 礼物的最大价值](MaxValue.java) | 最大值 | [在一个 m*n 的棋盘的每一格都放有一个礼物，每个礼物都有一定的价值（价值大于 0）。你可以从棋盘的左上角开始拿格子里的礼物，并每次向右或者向下移动一格、直到到达棋盘的右下角。给定一个棋盘及其上面的礼物的价值，请计算你最多能拿到多少价值的礼物？](https://leetcode-cn.com/problems/li-wu-de-zui-da-jie-zhi-lcof/) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) |  最小值 | [您需要找到达到楼层顶部的最低花费。在开始时，你可以选择从索引为 0 或 1 的元素作为初始阶梯。](https://leetcode-cn.com/problems/min-cost-climbing-stairs/) |
+| [最小路径和](MinPathSum.java) | 最小值 | [给定一个包含非负整数的 m x n 网格 grid ，请找出一条从左上角到右下角的路径，使得路径上的数字总和为最小。](https://leetcode-cn.com/problems/minimum-path-sum/) |
 
 </details>
 
