@@ -14,6 +14,7 @@
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
 | [两数之和](TwoSum.java) | Map映射 | [给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。](https://leetcode-cn.com/problems/two-sum/) |
+| [删除排序数组中的重复项](RemoveDuplicates.java) | | [给定一个排序数组，你需要在原地删除重复出现的元素，使得每个元素只出现一次，返回移除后数组的新长度。不要使用额外的数组空间，你必须在原地修改输入数组并在使用O(1)额外空间的条件下完成。](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/) |
 | [移动零](MoveZeroes.java) |   | [给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。](https://leetcode-cn.com/problems/move-zeroes/) |
 | [四数之和](FourSum.java) | 排序+双指针 | [给定一个包含 n 个整数的数组 nums 和一个目标值 target，判断 nums 中是否存在四个元素 a，b，c 和 d ，使得 a + b + c + d 的值与 target 相等？找出所有满足条件且不重复的四元组](https://leetcode-cn.com/problems/4sum/) |
 | [下一个排列](NextPermutation.java) | 交换位置  | [实现获取 下一个排列 的函数，算法需要将给定数字序列重新排列成字典序中下一个更大的排列。](https://leetcode-cn.com/problems/next-permutation/) |
