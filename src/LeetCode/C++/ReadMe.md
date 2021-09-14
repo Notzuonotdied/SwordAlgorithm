@@ -19,3 +19,4 @@
 | [Z 字形变换](ThreeSum.h) |  | [将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。](https://leetcode-cn.com/problems/zigzag-conversion/) |
 | [整数转罗马数字](ThreeSum.h) |  | [给定一个整数，将其转为罗马数字。输入确保在 1 到 3999 的范围内。](https://leetcode-cn.com/problems/integer-to-roman/) |
 | [最接近的三数之和](ThreeSum.h) |  | [给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。](https://leetcode-cn.com/problems/3sum-closest/) |
+| [回旋镖的数量](NumberOfBoomerangs.h) |  | [给定平面上 n 对 互不相同 的点 points ，其中 points[i] = [xi, yi] 。回旋镖 是由点 (i, j, k) 表示的元组 ，其中 i 和 j 之间的距离和 i 和 k 之间的距离相等（需要考虑元组的顺序）。返回平面上所有回旋镖的数量。](https://leetcode-cn.com/problems/number-of-boomerangs/) |
