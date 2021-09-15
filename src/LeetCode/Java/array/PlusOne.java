@@ -1,16 +1,24 @@
-package LeetCode.Java;
+package LeetCode.Java.array;
 
 import java.util.Arrays;
 
 public class PlusOne {
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(Solution1.plusOne(new int[]{0})));
-        System.out.println(Arrays.toString(Solution1.plusOne(new int[]{1, 2, 3})));
-        System.out.println(Arrays.toString(Solution1.plusOne(new int[]{1, 2, 9})));
-        System.out.println(Arrays.toString(Solution1.plusOne(new int[]{9, 9, 9})));
+        test(new Solution1());
     }
 
-    private static class Solution1 {
+    private static void test(IPlusOne iPlusOne) {
+        System.out.println(Arrays.toString(iPlusOne.plusOne(new int[]{0})));
+        System.out.println(Arrays.toString(iPlusOne.plusOne(new int[]{1, 2, 3})));
+        System.out.println(Arrays.toString(iPlusOne.plusOne(new int[]{1, 2, 9})));
+        System.out.println(Arrays.toString(iPlusOne.plusOne(new int[]{9, 9, 9})));
+    }
+
+    private interface IPlusOne {
+        int[] plusOne(int[] digits);
+    }
+
+    private static class Solution1 implements IPlusOne {
         /**
          * 给定一个由整数组成的非空数组所表示的非负整数，在该数的基础上加一。
          * <p>
@@ -22,7 +30,8 @@ public class PlusOne {
          * 链接：https://leetcode-cn.com/problems/plus-one
          * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
          */
-        public static int[] plusOne(int[] digits) {
+        @Override
+        public int[] plusOne(int[] digits) {
             if (digits.length == 0) {
                 return digits;
             }
