@@ -1,11 +1,13 @@
 package LeetCode.Java.greedy;
 
-public class MaxSubArray {
+import LeetCode.Java.common.CMaxSubArray;
+
+public class MaxSubArray extends CMaxSubArray {
     public static void main(String[] args) {
-        System.out.println(Solution1.maxSubArray(new int[]{-2, 1}));
+        test(new Solution1());
     }
 
-    private static class Solution1 {
+    private static class Solution1 implements IMaxSubArray {
         /**
          * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
          * <p>
@@ -19,7 +21,8 @@ public class MaxSubArray {
          * 链接：https://leetcode-cn.com/problems/maximum-subarray
          * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
          */
-        public static int maxSubArray(int[] nums) {
+        @Override
+        public int maxSubArray(int[] nums) {
             if (nums.length == 0) {
                 return 0;
             }
