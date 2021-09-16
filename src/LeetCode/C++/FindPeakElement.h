@@ -1,3 +1,6 @@
+#ifndef FIND_PEAK_ELEMENT_H
+#define FIND_PEAK_ELEMENT_H
+
 #include <vector>
 
 /*
@@ -25,3 +28,5 @@ static int FindPeakElement(const std::vector<int>& nums)
 
     return 0;
 }
+
+#endif // FIND_PEAK_ELEMENT_H

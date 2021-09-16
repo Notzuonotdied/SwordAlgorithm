@@ -1,3 +1,6 @@
+#ifndef NUMBER_OF_BOOMERANGS_H
+#define NUMBER_OF_BOOMERANGS_H
+
 #include <cmath>
 #include <algorithm>
 #include <vector>
@@ -71,3 +74,5 @@ static int NumberOfBoomerangs(std::vector<std::vector<int>>& points)
 
 	return result;
 }
+
+#endif // NUMBER_OF_BOOMERANGS_H

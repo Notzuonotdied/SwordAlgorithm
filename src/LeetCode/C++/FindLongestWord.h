@@ -1,3 +1,6 @@
+#ifndef FIND_LONGEST_WORD_H
+#define FIND_LONGEST_WORD_H
+
 #include <vector>
 #include <string>
 
@@ -62,3 +65,6 @@ static std::string FindLongestWord(const std::string &s, const std::vector<std::
 	
 	return result_index >= dictionary.size() ? "" : dictionary[result_index];
 }
+
+
+#endif // FIND_LONGEST_WORD_H
