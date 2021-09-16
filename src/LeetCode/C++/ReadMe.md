@@ -22,3 +22,4 @@
 | [回旋镖的数量](NumberOfBoomerangs.h) |  | [给定平面上 n 对 互不相同 的点 points ，其中 points[i] = [xi, yi] 。回旋镖 是由点 (i, j, k) 表示的元组 ，其中 i 和 j 之间的距离和 i 和 k 之间的距离相等（需要考虑元组的顺序）。返回平面上所有回旋镖的数量。](https://leetcode-cn.com/problems/number-of-boomerangs/) |
 | [通过删除字母匹配到字典里最长单词](FindLongestWord.h) |  | [给你一个字符串 s 和一个字符串数组 dictionary 作为字典，找出并返回字典中最长的字符串，该字符串可以通过删除 s 中的某些字符得到。如果答案不止一个，返回长度最长且字典序最小的字符串。如果答案不存在，则返回空字符串。](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/) |
 | [寻找峰值](FindPeakElement.h) |  | [峰值元素是指其值严格大于左右相邻值的元素。给你一个整数数组 nums，找到峰值元素并返回其索引。数组可能包含多个峰值，在这种情况下，返回 任何一个峰值 所在位置即可。你可以假设 nums[-1] = nums[n] = -∞ 。你必须实现时间复杂度为 O(log n) 的算法来解决此问题。](https://leetcode-cn.com/problems/find-peak-element/) |
+| [最长回文子串](LongestPalindrome.h) |  | [给你一个字符串 s，找到 s 中最长的回文子串。](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
