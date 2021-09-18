@@ -26,3 +26,4 @@
 | [Nim 游戏](CanWinNim.h) |  | [你和你的朋友，两个人一起玩 Nim 游戏：桌子上有一堆石头。你们轮流进行自己的回合，你作为先手。  每一回合，轮到的人拿掉 1 - 3 块石头。拿掉最后一块石头的人就是获胜者。假设你们每一步都是最优解。请编写一个函数，来判断你是否可以在给定石头数量为 n 的情况下赢得游戏。如果可以赢，返回 true；否则，返回 false 。](https://leetcode-cn.com/problems/nim-game/) |
 | [删除链表的倒数第 N 个结点](RemoveNthFromEnd.h) |  | [给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |
 | [单词搜索 II](FindWords.h) |  | [给定一个 m x n 二维字符网格 board 和一个单词（字符串）列表 words，找出所有同时在二维网格和字典中出现的单词。单词必须按照字母顺序，通过 相邻的单元格 内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母在一个单词中不允许被重复使用。](https://leetcode-cn.com/problems/word-search-ii/) |
+| [罗马数字转整数](RomanToInt.h) |  | [给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。](https://leetcode-cn.com/problems/roman-to-integer/) |
