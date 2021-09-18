@@ -24,4 +24,4 @@
 | [寻找峰值](FindPeakElement.h) |  | [峰值元素是指其值严格大于左右相邻值的元素。给你一个整数数组 nums，找到峰值元素并返回其索引。数组可能包含多个峰值，在这种情况下，返回 任何一个峰值 所在位置即可。你可以假设 nums[-1] = nums[n] = -∞ 。你必须实现时间复杂度为 O(log n) 的算法来解决此问题。](https://leetcode-cn.com/problems/find-peak-element/) |
 | [最长回文子串](LongestPalindrome.h) |  | [给你一个字符串 s，找到 s 中最长的回文子串。](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
 | [Nim 游戏](CanWinNim.h) |  | [你和你的朋友，两个人一起玩 Nim 游戏：桌子上有一堆石头。你们轮流进行自己的回合，你作为先手。  每一回合，轮到的人拿掉 1 - 3 块石头。拿掉最后一块石头的人就是获胜者。假设你们每一步都是最优解。请编写一个函数，来判断你是否可以在给定石头数量为 n 的情况下赢得游戏。如果可以赢，返回 true；否则，返回 false 。](https://leetcode-cn.com/problems/nim-game/) |
-
+| [删除链表的倒数第 N 个结点](RemoveNthFromEnd.h) |  | [给你一个链表，删除链表的倒数第 n 个结点，并且返回链表的头结点。](https://leetcode-cn.com/problems/remove-nth-node-from-end-of-list/) |
