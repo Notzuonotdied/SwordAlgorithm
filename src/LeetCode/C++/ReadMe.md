@@ -23,3 +23,5 @@
 | [通过删除字母匹配到字典里最长单词](FindLongestWord.h) |  | [给你一个字符串 s 和一个字符串数组 dictionary 作为字典，找出并返回字典中最长的字符串，该字符串可以通过删除 s 中的某些字符得到。如果答案不止一个，返回长度最长且字典序最小的字符串。如果答案不存在，则返回空字符串。](https://leetcode-cn.com/problems/longest-word-in-dictionary-through-deleting/) |
 | [寻找峰值](FindPeakElement.h) |  | [峰值元素是指其值严格大于左右相邻值的元素。给你一个整数数组 nums，找到峰值元素并返回其索引。数组可能包含多个峰值，在这种情况下，返回 任何一个峰值 所在位置即可。你可以假设 nums[-1] = nums[n] = -∞ 。你必须实现时间复杂度为 O(log n) 的算法来解决此问题。](https://leetcode-cn.com/problems/find-peak-element/) |
 | [最长回文子串](LongestPalindrome.h) |  | [给你一个字符串 s，找到 s 中最长的回文子串。](https://leetcode-cn.com/problems/longest-palindromic-substring/) |
+| [Nim 游戏](CanWinNim.h) |  | [你和你的朋友，两个人一起玩 Nim 游戏：桌子上有一堆石头。你们轮流进行自己的回合，你作为先手。  每一回合，轮到的人拿掉 1 - 3 块石头。拿掉最后一块石头的人就是获胜者。假设你们每一步都是最优解。请编写一个函数，来判断你是否可以在给定石头数量为 n 的情况下赢得游戏。如果可以赢，返回 true；否则，返回 false 。](https://leetcode-cn.com/problems/nim-game/) |
+
