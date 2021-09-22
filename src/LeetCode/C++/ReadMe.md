@@ -28,3 +28,4 @@
 | [单词搜索 II](FindWords.h) |  | [给定一个 m x n 二维字符网格 board 和一个单词（字符串）列表 words，找出所有同时在二维网格和字典中出现的单词。单词必须按照字母顺序，通过 相邻的单元格 内的字母构成，其中“相邻”单元格是那些水平相邻或垂直相邻的单元格。同一个单元格内的字母在一个单词中不允许被重复使用。](https://leetcode-cn.com/problems/word-search-ii/) |
 | [罗马数字转整数](RomanToInt.h) |  | [给定一个罗马数字，将其转换成整数。输入确保在 1 到 3999 的范围内。](https://leetcode-cn.com/problems/roman-to-integer/) |
 | [分隔链表](SplitListToParts.h) |  | [给你一个头结点为 head 的单链表和一个整数 k ，请你设计一个算法将链表分隔为 k 个连续的部分。每部分的长度应该尽可能的相等：任意两部分的长度差距不能超过 1 。这可能会导致有些部分为 null。这 k 个部分应该按照在链表中出现的顺序排列，并且排在前面的部分的长度应该大于或等于排在后面的长度。返回一个由上述 k 部分组成的数组。](https://leetcode-cn.com/problems/split-linked-list-in-parts/) |
+| [正则表达式匹配](IsMatch.h) |  | [给你一个字符串 s 和一个字符规律 p，请你来实现一个支持 '.' 和 '*' 的正则表达式匹配。  '.' 匹配任意单个字符  '*' 匹配零个或多个前面的那一个元素  所谓匹配，是要涵盖 整个 字符串 s的，而不是部分字符串。](https://leetcode-cn.com/problems/regular-expression-matching/) |
