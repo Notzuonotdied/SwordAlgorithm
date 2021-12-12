@@ -2,18 +2,18 @@ package LeetCode.Java.dp;
 
 public class ClimbStairs {
     public static void main(String[] args) {
-        System.out.println(Solution1.climbStairs(3));
-        System.out.println(Solution2.climbStairs(3));
-
-        for (int i = 3; i < 10; ++i) {
-            if (Solution1.climbStairs(i) != Solution2.climbStairs(i)) {
-                System.out.println("i = " + i + " 结果出错了。");
-                System.out.println("Solution1 = " + Solution1.climbStairs(i) + " Solution2 = " + Solution2.climbStairs(i));
-            }
-        }
+        int i = 10;
+        System.out.println(new Solution1().climbStairs(i));
+        System.out.println(new Solution2().climbStairs(i));
+        System.out.println(new Solution3().climbStairs(i));
     }
 
-    private static class Solution1 {
+    private interface IClimbStairs {
+
+        int climbStairs(int n);
+    }
+
+    private static class Solution1 implements IClimbStairs {
         /**
          * 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
          * <p>
@@ -23,7 +23,8 @@ public class ClimbStairs {
          * <p>
          * https://leetcode-cn.com/problems/climbing-stairs/
          */
-        public static int climbStairs(int n) {
+        @Override
+        public int climbStairs(int n) {
             if (n == 1) {
                 return 1;
             }
@@ -38,15 +39,42 @@ public class ClimbStairs {
         }
     }
 
-    private static class Solution2 {
+    private static class Solution2 implements IClimbStairs {
         /**
          * 使用递归，超时了……
          */
-        public static int climbStairs(int n) {
+        @Override
+        public int climbStairs(int n) {
             if (n <= 1) {
                 return 1;
             }
             return climbStairs(n - 1) + climbStairs(n - 2);
+        }
+    }
+
+    private static class Solution3 implements IClimbStairs {
+
+        /**
+         * 执行用时：0 ms, 在所有 Java 提交中击败了100.00% 的用户
+         * 内存消耗：34.7 MB, 在所有 Java 提交中击败了99.07% 的用户
+         */
+        @Override
+        public int climbStairs(int n) {
+            if (n < 2) {
+                return n;
+            } else if (n == 2) {
+                return 2;
+            }
+            int tmp = 0;
+            // 省内存版本
+            int[] dp = new int[2];
+            dp[0] = 2;
+            dp[1] = 1;
+            for (int i = 3; i <= n; ++i) {
+                tmp = i % 2;
+                dp[tmp] = dp[0] + dp[1];
+            }
+            return dp[tmp];
         }
     }
 }
