@@ -1,6 +1,7 @@
 # 前言
 
 - [10分钟速查LeetCode 热题100 【简单】](https://zhuanlan.zhihu.com/p/84230862)
+- 经典题目前有「⭐」标记。
 
 # 题目
 
@@ -9,6 +10,7 @@
 | [1.两数之和](../array/TwoSum.java) | Map映射 | [给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。](https://leetcode-cn.com/problems/two-sum/) |
 | [20.有效的括号](../ValidParenthesis.java) | 辅助栈 | [给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。](https://leetcode-cn.com/problems/valid-parentheses/) | 
 | [136.只出现一次的数字](../SingleNumber.java) | 异或 | [给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。](https://leetcode-cn.com/problems/single-number/) |
+| ⭐️[169.多数元素](../MajorityElement.java) | Boyer-Moore投票算法 | [给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。](https://leetcode-cn.com/problems/majority-element/) |
 
 ## 链表
 
