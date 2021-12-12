@@ -1,6 +1,6 @@
 package LeetCode.Java;
 
-import java.util.*;
+import java.util.Stack;
 
 public class ValidParenthesis {
     public static void main(String[] args) {
@@ -20,6 +20,9 @@ public class ValidParenthesis {
      * 来源：力扣（LeetCode）
      * 链接：https://leetcode-cn.com/problems/valid-parentheses
      * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+     * <p>
+     * 执行用时：1 ms, 在所有 Java 提交中击败了98.90% 的用户
+     * 内存消耗：36.5 MB, 在所有 Java 提交中击败了52.99% 的用户
      */
     private static class Solution1 {
         public static boolean isValid(String s) {
