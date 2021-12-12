@@ -33,6 +33,11 @@
 | ---- | ---- | ---- |
 | [101.对称二叉树](../../../SwordOffer/JavaOffer/Demo58.java) | 递归 | [给定一个二叉树，检查它是否是镜像对称的。](https://leetcode-cn.com/problems/symmetric-tree/) |
 | [262.翻转二叉树](../tree/InvertTree.java) | 递归 | [翻转一棵二叉树。](https://leetcode-cn.com/problems/invert-binary-tree/) |
+| ⭐[437.路径总和 III](../tree/PathSum.java) | 递归、回溯、前缀和 | [给定一个二叉树，它的每个结点都存放着一个整数值。找出路径和等于给定数值的路径总数。](https://leetcode-cn.com/problems/path-sum-iii/) |
+
+----
+
+- [前缀和定义、原理简介及使用分析](https://zhuanlan.zhihu.com/p/436526162)
 
 ## 动态规划
 
