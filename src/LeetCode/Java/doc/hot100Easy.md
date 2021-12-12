@@ -25,6 +25,7 @@
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
 | [101.对称二叉树](../../../SwordOffer/JavaOffer/Demo58.java) | 递归 | [给定一个二叉树，检查它是否是镜像对称的。](https://leetcode-cn.com/problems/symmetric-tree/) |
+| [262.翻转二叉树](../tree/InvertTree.java) | 递归 | [翻转一棵二叉树。](https://leetcode-cn.com/problems/invert-binary-tree/) |
 
 ## 动态规划
 

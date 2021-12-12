@@ -7,7 +7,11 @@ public class InvertTree {
 
     }
 
-    private static class Solution1 {
+    private interface ITree {
+        TreeNode invertTree(TreeNode root);
+    }
+
+    private static class Solution1 implements ITree {
         /**
          * 翻转一棵二叉树。
          *
@@ -29,9 +33,10 @@ public class InvertTree {
          * 链接：https://leetcode-cn.com/problems/invert-binary-tree
          * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
          *
-         * 执行用时 :0 ms, 在所有 Java 提交中击败了100.00% 的用户
-         * 内存消耗 :37.1 MB, 在所有 Java 提交中击败了6.00%的用户
+         * 执行用时：0 ms, 在所有 Java 提交中击败了100.00% 的用户
+         * 内存消耗：36 MB, 在所有 Java 提交中击败了24.24% 的用户
          */
+        @Override
         public TreeNode invertTree(TreeNode root) {
             if (root == null) {
                 return null;
