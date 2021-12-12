@@ -33,6 +33,7 @@
 | [53.最大子序和](../dp/MaxSubArray.java) |  动态规划，保证累加和大于0 | [给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。](https://leetcode-cn.com/problems/maximum-subarray/) |
 | [70.爬楼梯](../dp/ClimbStairs.java) | f(n)=f(n-1)+f(n-2) | [假设你正在爬楼梯。需要 n 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？](https://leetcode-cn.com/problems/climbing-stairs/) |
 | [121.买卖股票的最佳时机](../dp/MaxProfit.java) | 最大值 | [给定一个数组，它的第 i 个元素是一支给定股票第 i 天的价格。如果你最多只允许完成一笔交易（即买入和卖出一支股票一次），设计一个算法来计算你所能获取的最大利润。](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) |
+| [198.打家劫舍](../dp/Rob.java) | f(n)=Math.max(f(n-2)+array(i), f(n-1)) | [你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小偷闯入，系统会自动报警。给定一个代表每个房屋存放金额的非负整数数组，计算你在不触动警报装置的情况下，能够偷窃到的最高金额。](https://leetcode-cn.com/problems/house-robber/) |
 
 ## 贪心
 
