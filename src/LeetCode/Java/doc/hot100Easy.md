@@ -19,6 +19,7 @@
 | [21.合并两个有序链表](../linklist/MergeTwoLists.java) | | [将两个升序链表合并为一个新的升序链表并返回。新链表是通过拼接给定的两个链表的所有节点组成的。](https://leetcode-cn.com/problems/merge-two-sorted-lists/) |
 | [141.环形链表](../linklist/HasCycle.java) |  快慢指针/Set | [给定一个链表，判断链表中是否有环。](https://leetcode-cn.com/problems/linked-list-cycle/) |
 | [160.相交链表](../linklist/GetIntersectionNode.java) |  快慢指针 | [编写一个程序，找到两个单链表相交的起始节点。](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) |
+| [234. 回文链表](../linklist/PalindromeLinkedList.java) | 快慢指针、反转链表 | [给你一个单链表的头节点 head ，请你判断该链表是否为回文链表。如果是，返回 true ；否则，返回 false 。](https://leetcode-cn.com/problems/palindrome-linked-list/) | 
 
 ## 递归
 
