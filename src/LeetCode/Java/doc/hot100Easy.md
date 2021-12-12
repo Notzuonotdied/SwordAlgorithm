@@ -2,9 +2,6 @@
 
 # 题目
 
-<details>
-<summary>数组</summary>
-
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
 | [1.两数之和](../array/TwoSum.java) | Map映射 | [给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。](https://leetcode-cn.com/problems/two-sum/) |
@@ -14,8 +11,6 @@
 | [53.最大子序和](../greedy/MaxSubArray.java) |  贪心，保证累加和大于0 | [给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。](https://leetcode-cn.com/problems/maximum-subarray/) |
 | [70.爬楼梯](../dp/ClimbStairs.java) | DP | [假设你正在爬楼梯。需要 n 阶你才能到达楼顶。每次你可以爬 1 或 2 个台阶。你有多少种不同的方法可以爬到楼顶呢？](https://leetcode-cn.com/problems/climbing-stairs/) |
 
-</details>
-
 # 附录
 
-- 暂无。
+- [10分钟速查LeetCode 热题100 【简单】](https://zhuanlan.zhihu.com/p/84230862)
