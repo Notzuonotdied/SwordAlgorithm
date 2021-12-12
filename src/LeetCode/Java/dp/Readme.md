@@ -23,7 +23,7 @@
 | [打家劫舍](Rob.java) | dp(n+2) = Max(dp(n+1), dp(n)+array(n)) |
 | [面试题47. 礼物的最大价值](MaxValue.java) | dp(m, n) = Max(dp(m-1, n), dp(m, n-1)) |
 | [使用最小花费爬楼梯](MinCostClimbingStairs.java) | dp(2)=Min(dp(0)+cost(i-2), dp(1)+cost(i-1)) |
-| [连续子数组的最大和](MaxSubArray.java) | Sum(1...n) |
+| [53.连续子数组的最大和](MaxSubArray.java) | Sum(1...n) |
 | [面试题 08.11. 硬币](WaysToChange.java) | dp(n) = (dp(n) + dp(n - coin)) % MOD |
 
 ## 题集
@@ -48,7 +48,7 @@
 
 | 代码 | 解法 | 链接 |
 | ---- | ---- | ---- |
-| [连续子数组的最大和](MaxSubArray.java) | Sum | [输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) |
+| [53.连续子数组的最大和](MaxSubArray.java) | Sum | [输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。](https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/) |
 
 </details>
 
