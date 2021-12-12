@@ -12,6 +12,12 @@
 | [136.只出现一次的数字](../SingleNumber.java) | 异或 | [给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。](https://leetcode-cn.com/problems/single-number/) |
 | ⭐️[169.多数元素](../MajorityElement.java) | Boyer-Moore投票算法 | [给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。](https://leetcode-cn.com/problems/majority-element/) |
 
+## 数组
+
+| 代码 | 解法 | 链接 |
+| ---- | ---- | ---- |
+| [283.移动零](../array/MoveZeroes.java) |   | [给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序。](https://leetcode-cn.com/problems/move-zeroes/) |
+
 ## 链表
 
 | 代码 | 解法 | 链接 |
