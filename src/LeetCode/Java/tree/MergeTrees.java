@@ -7,7 +7,11 @@ public class MergeTrees {
 
     }
 
-    private static class Solution {
+    private interface ISolution {
+        TreeNode mergeTrees(TreeNode root1, TreeNode root2);
+    }
+
+    private static class Solution implements ISolution {
         /**
          * 给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。
          * <p>
@@ -22,18 +26,19 @@ public class MergeTrees {
          * 执行用时 :0 ms, 在所有 Java 提交中击败了100.00% 的用户
          * 内存消耗 :39.7 MB, 在所有 Java 提交中击败了94.12%的用户
          */
-        public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
-            if (t1 == null && t2 == null) {
+        @Override
+        public TreeNode mergeTrees(TreeNode root1, TreeNode root2) {
+            if (root1 == null && root2 == null) {
                 return null;
-            } else if (t1 == null) {
-                return t2;
-            } else if (t2 == null) {
-                return t1;
+            } else if (root1 == null) {
+                return root2;
+            } else if (root2 == null) {
+                return root1;
             }
-            t1.val += t2.val;
-            t1.left = mergeTrees(t1.left, t2.left);
-            t1.right = mergeTrees(t1.right, t2.right);
-            return t1;
+            root1.val += root2.val;
+            root1.left = mergeTrees(root1.left, root2.left);
+            root1.right = mergeTrees(root1.right, root2.right);
+            return root1;
         }
     }
 }
