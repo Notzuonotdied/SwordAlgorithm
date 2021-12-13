@@ -25,6 +25,7 @@
 | [在排序数组中查找元素的第一个和最后一个位置](SearchRange.java) |  二分查找 | [给定一个按照升序排列的整数数组 nums，和一个目标值 target。找出给定目标值在数组中的开始位置和结束位置。](https://leetcode-cn.com/problems/find-first-and-last-position-of-element-in-sorted-array/) |
 | [旋转图像](Rotate.java) | 规律分析 | [给定一个 n × n 的二维矩阵 matrix 表示一个图像。请你将图像顺时针旋转 90 度。](https://leetcode-cn.com/problems/rotate-image/) |
 | [合并区间](Merge.java) | 反证法 | [以数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。请你合并所有重叠的区间，并返回一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间。](https://leetcode-cn.com/problems/merge-intervals/) |
+| [448. 找到所有数组中消失的数字](FindDisappearedNumbers.java) | 数组Hash | [给你一个含 n 个整数的数组 nums ，其中 nums[i] 在区间 [1, n] 内。请你找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/) |
 
 # 附录
 
