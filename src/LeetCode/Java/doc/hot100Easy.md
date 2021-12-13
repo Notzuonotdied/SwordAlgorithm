@@ -14,6 +14,8 @@
 | ⭐️[169.多数元素](../MajorityElement.java) | Boyer-Moore投票算法 | [给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。](https://leetcode-cn.com/problems/majority-element/) |
 | TODO: 438.找到字符串中所有字母异位词 | | [给定两个字符串 s 和 p，找到 s 中所有 p 的 异位词 的子串，返回这些子串的起始索引。不考虑答案输出的顺序。](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) |
 | [汉明距离](../HammingDistance.java) | 异或、相与 | [给出两个整数 x 和 y，计算它们之间的汉明距离。](https://leetcode-cn.com/problems/hamming-distance/) |
+| TODO: 581. 最短无序连续子数组 | | [给你一个整数数组 nums ，你需要找出一个 连续子数组 ，如果对这个子数组进行升序排序，那么整个数组都会变为升序排序。](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray/) |
+| TODO: 538. 把二叉搜索树转换为累加树 | | [给出二叉 搜索 树的根节点，该树的节点值各不相同，请你将其转换为累加树（Greater Sum Tree），使每个节点 node 的新值等于原树中大于或等于 node.val 的值之和。](https://leetcode-cn.com/problems/convert-bst-to-greater-tree/) |
 
 ## 数组
 
