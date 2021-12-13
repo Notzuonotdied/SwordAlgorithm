@@ -24,6 +24,12 @@
 | 剑指Offer | [Java实现-剑指Offer](src/SwordOffer/JavaOffer)<br/><br/>[Kotlin实现-剑指Offer](src/SwordOffer/KotlinOffer) |
 | LeetCode | [Java实现-LeetCode](src/LeetCode/Java)<br/><br/>[Python实现-LeetCode](src/LeetCode/Python)<br/><br/> [JavaScript实现-LeetCode](src/LeetCode/JavaScript)<br/><br/>[C++实现-LeetCode](src/LeetCode/C++) |
 
+## LeetCode热题
+
+| 目录 | 说明 |
+| ---- | ----- |
+| LeetCode 热题100 【简单】 | [Java实现](src/LeetCode/Java/doc/hot100Easy.md) |
+
 ## 面试题型
 
 | 厂 | 说明 |
