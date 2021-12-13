@@ -2,6 +2,7 @@
 
 - [10分钟速查LeetCode 热题100 【简单】](https://zhuanlan.zhihu.com/p/84230862)
 - 经典题目前有「⭐」标记。
+- TODO：暂时未刷的题目。
 
 # 题目
 
