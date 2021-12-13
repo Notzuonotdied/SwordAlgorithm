@@ -25,6 +25,7 @@
 | [二叉树的前序遍历](PreorderTraversal.java) |  递归、栈 | [给你二叉树的根节点 root ，返回它节点值的 前序 遍历。](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/) |
 | [二叉树的中序遍历](InorderTraversal.java) | 递归、栈 | [给定一个二叉树，返回它的中序 遍历。](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/) |
 | [二叉树的后序遍历](PostorderTraversal.java) |  递归、栈 | [给定一个二叉树，返回它的 后序 遍历。](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/) |
+| [543. 二叉树的直径](DiameterOfBinaryTree.java) | 递归 | [给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过也可能不穿过根结点。](https://leetcode-cn.com/problems/diameter-of-binary-tree/) |
 
 # 附录
 

@@ -38,6 +38,7 @@
 | [101.对称二叉树](../../../SwordOffer/JavaOffer/Demo58.java) | 递归 | [给定一个二叉树，检查它是否是镜像对称的。](https://leetcode-cn.com/problems/symmetric-tree/) |
 | [262.翻转二叉树](../tree/InvertTree.java) | 递归 | [翻转一棵二叉树。](https://leetcode-cn.com/problems/invert-binary-tree/) |
 | ⭐[437.路径总和 III](../tree/PathSum.java) | 递归、回溯、前缀和 | [给定一个二叉树，它的每个结点都存放着一个整数值。找出路径和等于给定数值的路径总数。](https://leetcode-cn.com/problems/path-sum-iii/) |
+| [543. 二叉树的直径](../tree/DiameterOfBinaryTree.java) | 递归 | [给定一棵二叉树，你需要计算它的直径长度。一棵二叉树的直径长度是任意两个结点路径长度中的最大值。这条路径可能穿过也可能不穿过根结点。](https://leetcode-cn.com/problems/diameter-of-binary-tree/) |
 | [618.合并二叉树](../tree/MergeTrees.java) | 递归 | [给定两个二叉树，想象当你将它们中的一个覆盖到另一个上时，两个二叉树的一些节点便会重叠。你需要将他们合并为一个新的二叉树。合并的规则是如果两个节点重叠，那么将他们的值相加作为节点合并后的新值，否则不为 NULL 的节点将直接作为新二叉树的节点。](https://leetcode-cn.com/problems/merge-two-binary-trees/) |
 
 ----
