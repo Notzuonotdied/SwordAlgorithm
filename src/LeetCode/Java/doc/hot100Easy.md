@@ -11,6 +11,8 @@
 | [20.有效的括号](../ValidParenthesis.java) | 辅助栈 | [给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。](https://leetcode-cn.com/problems/valid-parentheses/) | 
 | [136.只出现一次的数字](../SingleNumber.java) | 异或 | [给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。](https://leetcode-cn.com/problems/single-number/) |
 | ⭐️[169.多数元素](../MajorityElement.java) | Boyer-Moore投票算法 | [给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。](https://leetcode-cn.com/problems/majority-element/) |
+| TODO: 438.找到字符串中所有字母异位词 | | [给定两个字符串 s 和 p，找到 s 中所有 p 的 异位词 的子串，返回这些子串的起始索引。不考虑答案输出的顺序。](https://leetcode-cn.com/problems/find-all-anagrams-in-a-string/) |
+| [汉明距离](../HammingDistance.java) | 异或、相与 | [给出两个整数 x 和 y，计算它们之间的汉明距离。](https://leetcode-cn.com/problems/hamming-distance/) |
 
 ## 数组
 
