@@ -8,7 +8,7 @@
 
 | 问题 | 公式 |
 | ---- | ---- |
-[复杂链表的复制](CopyRandomList.java) |  基于原链表拷贝并插入，之后再依据原来的链表关系进行拆分。 |
+| [复杂链表的复制](CopyRandomList.java) |  基于原链表拷贝并插入，之后再依据原来的链表关系进行拆分。 |
 
 ## 题集
 
@@ -19,6 +19,12 @@
 | [141.环形链表](HasCycle.java) |  快慢指针/Set | [给定一个链表，判断链表中是否有环。](https://leetcode-cn.com/problems/linked-list-cycle/) |
 | [160.相交链表](GetIntersectionNode.java) |  快慢指针 | [编写一个程序，找到两个单链表相交的起始节点。](https://leetcode-cn.com/problems/intersection-of-two-linked-lists/) |
 | [234. 回文链表](PalindromeLinkedList.java) | 快慢指针、反转链表 | [给你一个单链表的头节点 head ，请你判断该链表是否为回文链表。如果是，返回 true ；否则，返回 false 。](https://leetcode-cn.com/problems/palindrome-linked-list/) | 
+
+### 简单
+
+| 代码 | 解法 | 链接 |
+| ---- | ---- | ---- |
+| [206.反转链表](ReverseList.java) | | [反转一个单链表。](https://leetcode-cn.com/problems/reverse-linked-list/) |
 
 # 附录
 

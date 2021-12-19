@@ -19,7 +19,6 @@
 | [20.有效的括号](ValidParenthesis.java) | 辅助栈 | [给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。](https://leetcode-cn.com/problems/valid-parentheses/) | 
 | [反转字符串](ReverseString.java) | | [编写一个函数，其作用是将输入的字符串反转过来。输入字符串以字符数组 char[] 的形式给出。](https://leetcode-cn.com/problems/reverse-string/) |
 | [反转字符串中的单词 III](ReverseWords.java) | | [给定一个字符串，你需要反转字符串中每个单词的字符顺序，同时仍保留空格和单词的初始顺序。](https://leetcode-cn.com/problems/reverse-words-in-a-string-iii/) |
-| [反转链表](ReverseList.java) | | [反转一个单链表。](https://leetcode-cn.com/problems/reverse-linked-list/) |
 | [除自身以外数组的乘积](ProductExceptSelf.java) |   | [给你一个长度为 n 的整数数组 nums，其中 n > 1，返回输出数组 output ，其中 output[i] 等于 nums 中除 nums[i] 之外其余各元素的乘积。](https://leetcode-cn.com/problems/product-of-array-except-self/) |
 | [136.只出现一次的数字](SingleNumber.java) | 异或 | [给定一个非空整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。](https://leetcode-cn.com/problems/single-number/) |
 | [存在重复元素](ContainsDuplicate.java) |   | [给定一个整数数组，判断是否存在重复元素。](https://leetcode-cn.com/problems/contains-duplicate/) |
