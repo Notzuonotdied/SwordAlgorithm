@@ -26,6 +26,7 @@
 | [旋转图像](Rotate.java) | 规律分析 | [给定一个 n × n 的二维矩阵 matrix 表示一个图像。请你将图像顺时针旋转 90 度。](https://leetcode-cn.com/problems/rotate-image/) |
 | [合并区间](Merge.java) | 反证法 | [以数组 intervals 表示若干个区间的集合，其中单个区间为 intervals[i] = [starti, endi] 。请你合并所有重叠的区间，并返回一个不重叠的区间数组，该数组需恰好覆盖输入中的所有区间。](https://leetcode-cn.com/problems/merge-intervals/) |
 | [448. 找到所有数组中消失的数字](FindDisappearedNumbers.java) | 数组Hash | [给你一个含 n 个整数的数组 nums ，其中 nums[i] 在区间 [1, n] 内。请你找出所有在 [1, n] 范围内但没有出现在 nums 中的数字，并以数组的形式返回结果。](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/) |
+| [922. 按奇偶排序数组 II](SortArrayByParityII.java) | | [给定一个非负整数数组 A， A 中一半整数是奇数，一半整数是偶数。对数组进行排序，以便当 A[i] 为奇数时，i 也是奇数；当 A[i] 为偶数时， i 也是偶数。](https://leetcode-cn.com/problems/sort-array-by-parity-ii/) |
 
 # 附录
 
