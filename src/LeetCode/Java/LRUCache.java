@@ -54,7 +54,7 @@ public class LRUCache {
             head.next = tail;
             tail.prev = head;
             // 定义容量，即可确定cache的大小。避免HashMap的扩容。
-            this.cache = new HashMap<>(capacity + 2);
+            this.cache = new HashMap<>(capacity);
         }
 
         public int get(int key) {

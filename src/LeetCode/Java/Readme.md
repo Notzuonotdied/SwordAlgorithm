@@ -46,7 +46,6 @@
 | [逆波兰表达式求值](EvalRPN.java) |  辅助栈 | [根据逆波兰表示法，求表达式的值。](https://leetcode-cn.com/problems/evaluate-reverse-polish-notation/) |
 | [汉明距离](HammingDistance.java) | 异或、相与 | [给出两个整数 x 和 y，计算它们之间的汉明距离。](https://leetcode-cn.com/problems/hamming-distance/) |
 | [盛最多水的容器](MaxArea.java) | 双指针消状态<br/>裁剪搜索空间 | [给你 n 个非负整数 a1，a2，...，an，每个数代表坐标中的一个点 (i, ai) 。在坐标内画 n 条垂直线，垂直线 i 的两个端点分别为 (i, ai) 和 (i, 0)。找出其中的两条线，使得它们与 x 轴共同构成的容器可以容纳最多的水。](https://leetcode-cn.com/problems/container-with-most-water/) |
-| [146. LRU 缓存机制](LRUCache.java)| | [运用你所掌握的数据结构，设计和实现一个  LRU (最近最少使用) 缓存机制 。](https://leetcode-cn.com/problems/lru-cache/) |
 
 </details>
 
