@@ -34,7 +34,7 @@ public class LRUCache {
      */
     private static class Solution2 {
         // 数据缓存
-        private final Map<Integer, LinkedNode> cache = new HashMap<>();
+        private final Map<Integer, LinkedNode> cache;
         // 缓存的数量
         private final int capacity;
         // 伪头节点
@@ -49,10 +49,12 @@ public class LRUCache {
             this.size = 0;
             this.capacity = capacity;
             // 使用伪头部和伪尾部节点
-            head = new LinkedNode();
-            tail = new LinkedNode();
+            this.head = new LinkedNode();
+            this.tail = new LinkedNode();
             head.next = tail;
             tail.prev = head;
+            // 定义容量，即可确定cache的大小。避免HashMap的扩容。
+            this.cache = new HashMap<>(capacity + 2);
         }
 
         public int get(int key) {
