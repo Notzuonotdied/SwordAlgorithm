@@ -26,10 +26,8 @@ public class FindKthLargest {
          * @see SwordOffer.JavaOffer.Demo29  利用快排找最小的第 K 个元素
          */
         public int findKthLargest(int[] nums, int k) {
-            int index = 0;
-            int start = 0;
-            int end = nums.length - 1;
-
+            int index = 0, start = 0, end = nums.length - 1;
+            // 需要考虑重合的情况
             while (start <= end) {
                 index = partition(nums, start, end);
 
@@ -71,10 +69,10 @@ public class FindKthLargest {
             return start;
         }
 
-        private void swap(int[] nums, int start, int j) {
+        private void swap(int[] nums, int start, int end) {
             int temp = nums[start];
-            nums[start] = nums[j];
-            nums[j] = temp;
+            nums[start] = nums[end];
+            nums[end] = temp;
         }
     }
 }
