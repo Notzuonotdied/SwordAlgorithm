@@ -37,6 +37,7 @@
 | 快手 | [快手面试算法题](src/Kuaishou) |
 | 蘑菇街 | [蘑菇街面试算法题](src/Mogujie) |
 | 拼多多 | [拼多多面试算法题](src/Company/pdd.md) |
+| 字节跳动 | [字节跳动面试算法题](src/Company/bytedance.md) |
 
 ## 其他
 
