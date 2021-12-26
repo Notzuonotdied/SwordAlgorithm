@@ -21,6 +21,8 @@
 | [子集 II](SubsetsWithDup.java) |  回溯 | [给定一个可能包含重复元素的整数数组 nums，返回该数组所有可能的子集（幂集）。](https://leetcode-cn.com/problems/subsets-ii/) |
 | [分割回文串](Partition.java) |  动态规划+回溯 | [给定一个字符串 s，将 s 分割成一些子串，使每个子串都是回文串。返回 s 所有可能的分割方案。](https://leetcode-cn.com/problems/palindrome-partitioning/) |
 | [面试题 08.02. 迷路的机器人](PathWithObstacles.java) |  回溯算法变种 | [设想有个机器人坐在一个网格的左上角，网格 r 行 c 列。机器人只能向下或向右移动，但不能走到一些被禁止的网格（有障碍物）。设计一种算法，寻找机器人从左上角移动到右下角的路径。](https://leetcode-cn.com/problems/robot-in-a-grid-lcci/) |
+| [200. 岛屿数量](NumIslands.java) | DFS | [给你一个由 '1'（陆地）和 '0'（水）组成的的二维网格，请你计算网格中岛屿的数量。](https://leetcode-cn.com/problems/number-of-islands/) |
+
 # 附录
 
  - [https://leetcode-cn.com](https://leetcode-cn.com)
