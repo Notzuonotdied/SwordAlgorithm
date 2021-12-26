@@ -1,4 +1,4 @@
-package LeetCode.Java;
+package LeetCode.Java.tree;
 
 import common.java.TreeNode;
 
@@ -9,7 +9,11 @@ public class LowestCommonAncestor1 {
 
     }
 
-    private static class Solution1 {
+    private interface ISolution {
+        TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q);
+    }
+
+    private static class Solution1 implements ISolution {
         /**
          * 给定一个二叉树, 找到该树中两个指定节点的最近公共祖先。
          * <p>
@@ -56,7 +60,7 @@ public class LowestCommonAncestor1 {
         }
     }
 
-    private static class Solution2 {
+    private static class Solution2 implements ISolution {
         private TreeNode res;
 
         /**
@@ -81,6 +85,35 @@ public class LowestCommonAncestor1 {
                 return true;
             }
             return x == p || x == q || leftCon || rightCon;
+        }
+    }
+
+    private static class Solution3 implements ISolution {
+
+        /**
+         * 摘录自：https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/solution/er-cha-shu-de-zui-jin-gong-gong-zu-xian-by-leetc-2/922962
+         * 树形一：root为p，q中的一个，这时公共祖先为root
+         * 树形二：p，q分别在root的左右子树上（p在左子树，q在右子树；还是p在右子树，q在左子树的情况都统一放在一起考虑）
+         * 这时满足p，q的最近公共祖先的结点也只有root本身
+         * 树形三：p和q同时在root的左子树；或者p，q同时在root的右子树，这时确定最近公共祖先需要遍历子树来进行递归求解。
+         * <p>
+         * 执行用时：6 ms, 在所有 Java 提交中击败了100.00% 的用户
+         * 内存消耗：40.5 MB, 在所有 Java 提交中击败了61.57% 的用户
+         */
+        public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+            if (root == null) {
+                return null;
+            }
+            if (root == p || root == q) {
+                return root;
+            }
+            TreeNode left = lowestCommonAncestor(root.left, p, q);
+            TreeNode right = lowestCommonAncestor(root.right, p, q);
+            if (left != null && right != null) {
+                return root;
+            } else {
+                return left == null ? right : left;
+            }
         }
     }
 }
