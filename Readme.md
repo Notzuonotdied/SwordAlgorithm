@@ -24,12 +24,20 @@
 | 剑指Offer | [Java实现-剑指Offer](src/SwordOffer/JavaOffer)<br/><br/>[Kotlin实现-剑指Offer](src/SwordOffer/KotlinOffer) |
 | LeetCode | [Java实现-LeetCode](src/LeetCode/Java)<br/><br/>[Python实现-LeetCode](src/LeetCode/Python)<br/><br/> [JavaScript实现-LeetCode](src/LeetCode/JavaScript)<br/><br/>[C++实现-LeetCode](src/LeetCode/C++) |
 
+## LeetCode热题
+
+| 目录 | 说明 |
+| ---- | ----- |
+| LeetCode 热题100 【简单】 | [Java实现](src/LeetCode/Java/doc/hot100Easy.md) |
+
 ## 面试题型
 
 | 厂 | 说明 |
 | ---- | ---- |
 | 快手 | [快手面试算法题](src/Kuaishou) |
 | 蘑菇街 | [蘑菇街面试算法题](src/Mogujie) |
+| 拼多多 | [拼多多面试算法题](src/Company/pdd.md) |
+| 字节跳动 | [字节跳动面试算法题](src/Company/bytedance.md) |
 
 ## 其他
 

@@ -10,7 +10,13 @@ public class MajorityElement {
 
     private static class Solution1 {
         /**
-         * 使用HashMap
+         * 给定一个大小为 n 的数组，找到其中的多数元素。多数元素是指在数组中出现次数 大于 ⌊ n/2 ⌋ 的元素。
+         * <p>
+         * 你可以假设数组是非空的，并且给定的数组总是存在多数元素。
+         * <p>
+         * 来源：力扣（LeetCode）
+         * 链接：https://leetcode-cn.com/problems/majority-element
+         * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
          */
         public static int majorityElement(int[] nums) {
             int half = Math.floorDiv(nums.length, 2);
@@ -50,6 +56,9 @@ public class MajorityElement {
          * 详见题解——方法五：Boyer-Moore 投票算法
          * <p>
          * https://leetcode-cn.com/problems/majority-element/solution/duo-shu-yuan-su-by-leetcode-solution/
+         * <p>
+         * 执行用时：1 ms, 在所有 Java 提交中击败了99.95% 的用户
+         * 内存消耗：43.8 MB, 在所有 Java 提交中击败了77.01% 的用户
          */
         public int majorityElement(int[] nums) {
             int count = 0;

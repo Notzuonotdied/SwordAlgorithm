@@ -53,10 +53,14 @@ public class PathSum {
 
         root.right.right = new TreeNode(11);
 
-        System.out.println(Solution1.pathSum(root, 8));
+        System.out.println(new Solution1().pathSum(root, 8));
     }
 
-    private static class Solution1 {
+    private interface IPathSum {
+        int pathSum(TreeNode root, int sum);
+    }
+
+    private static class Solution1 implements IPathSum {
 
         /**
          * 解题思路
@@ -85,8 +89,12 @@ public class PathSum {
          * 链接：https://leetcode-cn.com/problems/path-sum-iii/solution/qian-zhui-he-di-gui-hui-su-by-shi-huo-de-xia-tian/
          * 来源：力扣（LeetCode）
          * 著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+         *
+         * 执行用时：2 ms, 在所有 Java 提交中击败了99.99% 的用户
+         * 内存消耗：37.9 MB, 在所有 Java 提交中击败了95.43% 的用户
          */
-        public static int pathSum(TreeNode root, int sum) {
+        @Override
+        public int pathSum(TreeNode root, int sum) {
             // key是前缀和, value是大小为key的前缀和出现的次数
             Map<Integer, Integer> prefixSumCount = new HashMap<>();
             // 前缀和为0的一条路径
@@ -107,7 +115,7 @@ public class PathSum {
          * @param currSum        当前路径和
          * @return 满足题意的解
          */
-        private static int recursionPathSum(TreeNode node, Map<Integer, Integer> prefixSumCount, int target, int currSum) {
+        private int recursionPathSum(TreeNode node, Map<Integer, Integer> prefixSumCount, int target, int currSum) {
             // 1.递归终止条件
             if (node == null) {
                 return 0;

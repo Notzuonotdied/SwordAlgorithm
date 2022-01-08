@@ -1,25 +1,31 @@
 package LeetCode.Java.dp;
 
-public class MaxSubArray {
+import LeetCode.Java.common.CMaxSubArray;
+
+public class MaxSubArray extends CMaxSubArray {
+
     public static void main(String[] args) {
-        System.out.println(Solution1.maxSubArray(new int[]{-2, 1, -3, 4, -1, 2, 1, -5, 4})); // 6
-        System.out.println(Solution1.maxSubArray(new int[]{1}));
-        System.out.println(Solution1.maxSubArray(new int[]{-2, 1}));
+        test(new Solution1());
     }
 
-    private static class Solution1 {
+    private static class Solution1 implements IMaxSubArray {
         /**
-         * 输入一个整型数组，数组里有正数也有负数。数组中的一个或连续多个整数组成一个子数组。求所有子数组的和的最大值。
+         * 给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
          * <p>
-         * 要求时间复杂度为O(n)。
-         * <p>
-         * 示例1:
+         * 示例 1：
+         * 输入：nums = [-2,1,-3,4,-1,2,1,-5,4]
+         * 输出：6
+         * 解释：连续子数组 [4,-1,2,1] 的和最大，为 6 。
          * <p>
          * 来源：力扣（LeetCode）
-         * 链接：https://leetcode-cn.com/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof
+         * 链接：https://leetcode-cn.com/problems/maximum-subarray
          * 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。
+         * <p>
+         * 执行用时：1 ms, 在所有 Java 提交中击败了91.20% 的用户
+         * 内存消耗：37.8 MB, 在所有 Java 提交中击败了99.22% 的用户
          */
-        public static int maxSubArray(int[] nums) {
+        @Override
+        public int maxSubArray(int[] nums) {
             if (nums.length == 0) {
                 return 0;
             }

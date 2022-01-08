@@ -1,3 +1,6 @@
+#ifndef ADD_TWO_NUMBERS_H
+#define ADD_TWO_NUMBERS_H
+
 template<typename _Tp>
 struct ListNode
 {
@@ -42,3 +45,4 @@ ListNode<_Tp>* AddTwoNumbers(ListNode<_Tp> *l1, ListNode<_Tp> *l2)
     return head->next;
 }
 
+#endif // ADD_TWO_NUMBERS_H

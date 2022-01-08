@@ -12,19 +12,19 @@ static double MyPow(double x, int n) {
     {
         if(n == -2147483648)
         {
-            return 1 / x / myPow(x, 2147483647);
+            return 1 / x / MyPow(x, 2147483647);
         }
-        return 1 / myPow(x, -n);
+        return 1 / MyPow(x, -n);
     }
 
     // 偶数
     if((n & 1) == 0)
     {
-        double tmp = myPow(x, n >> 1);
+        double tmp = MyPow(x, n >> 1);
         return tmp * tmp;
     }
 
-    double tmp = myPow(x, n >> 1);
+    double tmp = MyPow(x, n >> 1);
     return x * tmp * tmp;
 }
 
