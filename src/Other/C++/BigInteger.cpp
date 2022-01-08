@@ -132,20 +132,21 @@ bool _M_BigInteger_Base::EqualTo(const _M_BigInteger_Base &v) const
 
 std::ostream& operator<<(std::ostream &os, const BigInteger &bi) 
 {
-    std::vector<char>::const_iterator end = bi._M_data.end()--;
-    if(*end != 0)
+    if(bi.Symbol() == SYMBOL::NEGATIVE)
     {
         os << '-';
     }
-    std::vector<char>::const_iterator it = bi._M_data.begin();
-    while(it != end && *it++ == 0);
-    if(it == end)
+    std::vector<char>::const_iterator tail = bi._M_data.end();
+    std::vector<char>::const_iterator head = bi._M_data.begin();
+    while(--tail != head && *tail == 0);
+    
+    if(tail == head)
     {
         os << '0';
     }
-    while(it != end)
+    while(tail != head)
     {
-        os << *it++ + '0';
+        os << *(tail--) + '0';
     }
     return os;
 }
